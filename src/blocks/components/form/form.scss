@@ -1,7 +1,7 @@
 .form {
     width: 100%;
     padding: 48px;
-    background-color: $c-grey;
+    background-color: $c-light-bg;
 
     @include max(1024) {
         padding: 40px;
@@ -25,7 +25,7 @@
         font-size: 56px;
         line-height: 1.08em;
         text-align: center;
-        color: $c-white;
+        color: $c-text;
 
         @include max(1024) {
             font-size: 48px;
@@ -85,14 +85,14 @@
 
         a {
             transition: text-decoration $tr-time-and-type;
-            color: $c-beige;
+            color: $c-text;
 
             @include hover() {
                 text-decoration: underline;
             }
 
             &:active {
-                color: $c-beige-hover;
+                color: $c-accent-1;
             }
 
             @include max(500) {

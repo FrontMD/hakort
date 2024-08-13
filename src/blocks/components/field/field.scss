@@ -45,11 +45,11 @@
             left: 50%;
             padding: 10px 16px;
             transform: translateX(-50%);
-            background-color: $c-beige-hover;
+            background-color: $c-light-bg;
             border-radius: 40px;
             font-size: 12px;
             line-height: 1.22em;
-            color: $c-brown;
+            color: $c-text;
 
             &::after {
                 content: '';
@@ -58,7 +58,7 @@
                 top: -19px;
                 transform: translateX(-50%);
                 border: 6px solid transparent;
-                border-bottom: 13px solid $c-beige-hover;
+                border-bottom: 13px solid $c-text;
             }
         }
     }
@@ -66,13 +66,13 @@
     &__input {
         width: 100%;
         padding: 40px 20px;
-        border-bottom: 1px solid $c-beige;
-        border-color: $c-beige;
+        border-bottom: 1px solid $c-text;
+        border-color: $c-text;
         font-size: 16px;
         line-height: 1.5em;
         background-color: transparent;
         outline: none;
-        color: $c-beige-hover;
+        color: $c-text;
         text-align: center;
         cursor: pointer;
         transition: border-color $tr-time-and-type;
@@ -86,28 +86,28 @@
         }
 
         &::placeholder {
-            color: $c-beige-3;
+            color: $c-text;
             opacity: 1;
         }
 
         &:-ms-input-placeholder {
-            color: $c-beige-3;
+            color: $c-text;
         }
 
         &::-ms-input-placeholder {
-            color: $c-beige-3;
+            color: $c-text;
         }
 
         &:focus {
-            border-color: $c-beige-hover;
+            border-color: $c-text;
         }
 
     }
 
     &--textarea {
         padding: 40px 20px;
-        border-bottom: 1px solid $c-beige;
-        border-color: $c-beige;
+        border-bottom: 1px solid $c-text;
+        border-color: $c-text;
         transition: border-color $tr-time-and-type;
 
         @include max(1024) {
@@ -125,25 +125,25 @@
         line-height: 1.5em;
         background-color: transparent;
         outline: none;
-        color: $c-beige-hover;
+        color: $c-text;
         text-align: center;
         cursor: pointer;
 
         &::placeholder {
-            color: $c-beige-3;
+            color: $c-text;
             opacity: 1;
         }
 
         &:-ms-input-placeholder {
-            color: $c-beige-3;
+            color: $c-text;
         }
 
         &::-ms-input-placeholder {
-            color: $c-beige-3;
+            color: $c-text;
         }
 
         &:focus {
-            border-color: $c-beige-hover;
+            border-color: $c-text;
         }
 
     }
@@ -153,19 +153,19 @@
 .field {
     @include hover() {
         .field__input {
-            border-color: $c-beige-hover;
+            border-color: $c-text;
 
             &::placeholder {
-                color: $c-beige-hover;
+                color: $c-text;
                 opacity: 1;
             }
 
             &:-ms-input-placeholder {
-                color: $c-beige-hover;
+                color: $c-text;
             }
 
             &::-ms-input-placeholder {
-                color: $c-beige-hover;
+                color: $c-text;
             }
         }
     }

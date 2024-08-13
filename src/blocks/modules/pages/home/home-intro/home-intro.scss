@@ -1,0 +1,147 @@
+.home-intro {
+    height: 100vh;
+    padding-bottom: 50px;
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &--1 {
+            width: 650px;
+            right: 0;
+        }
+
+        &--2 {
+            width: 570px;
+        }
+
+        &--3 {
+            width: 1329px;
+        }
+
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__inner {
+        position: relative;
+        height: calc(100vh - 77px);
+        padding-top: 100px;
+        background-color: $c-light-bg;
+        border-radius: 0 0 30px 30px;
+    }
+
+    &__center {
+        width: 100%;
+        max-width: 1375px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__logo {
+        text-align: center;
+        margin-top: 7px;
+    }
+
+    &__advantages {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    &__advantage {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        svg {
+            width: 19px;
+            height: 14px;
+        }
+    }
+
+    &__btn {
+        margin-top: 30px;
+    }
+
+    &__cards {
+        display: flex;
+        align-items: stretch;
+        gap: 30px;
+        margin-top: auto;
+        margin-bottom: -50px;
+    }
+
+    &__cards &__card:first-child {
+        .intro-card__icon {
+            width: 80px;
+            height: 56px;
+        }
+    }
+
+}
+
+.intro-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    min-height: 212px;
+
+    &__icon {
+        flex-shrink: 0;
+        width: 74px;
+        height: 74px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__desc {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.22em;
+
+        span {
+            color: $c-accent-1;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.57em;
+    }
+
+    &__btn {
+        margin-top: auto;
+    }
+
+}

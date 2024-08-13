@@ -4,10 +4,10 @@
     gap: 8px;
     font-size: 16px;
     line-height: 1.5em;
-    color: $c-white-4;
+    color: $c-white;
 
     a {
-        color: $c-white-4;
+        color: $c-white;
         text-decoration: none;
 
         @include hover {
@@ -50,7 +50,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: 0;
-            background-color: $c-white-4;
+            background-color: $c-white;
             width: 6px;
             height: 6px;
             border-radius: 100%;
@@ -72,7 +72,7 @@
             top: 0;
             left: 0;
             font-weight: bold;
-            color: $c-white-4;
+            color: $c-white;
         }
     }
 
