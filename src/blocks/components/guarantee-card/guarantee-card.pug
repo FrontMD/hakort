@@ -1,0 +1,33 @@
+-
+    const defaultGuaranteeCardProps = {
+        classes: '',
+        title: 'Тормозные диски',
+        icon: 'product_i_1',
+        term: '12 месяцев <br>30 000 км пробега',
+        text: 'Гарантия распространяется на брак материала или производственный брак',
+    }
+
+mixin guarantee-card(props = defaultGuaranteeCardProps)
+    -
+        const checkProps = {
+            classes: props.classes ? props.classes : defaultGuaranteeCardProps.classes,
+            title: props.title ? props.title : defaultGuaranteeCardProps.title,
+            icon: props.icon ? props.icon : defaultGuaranteeCardProps.icon,
+            term: props.term ? props.term : defaultGuaranteeCardProps.term,
+            text: props.text ? props.text : defaultGuaranteeCardProps.text,            
+        }
+
+    .guarantee-card(class=checkProps.classes)&attributes(attributes)
+        .guarantee-card__header
+            +title({
+                tag: "h3",
+                text: checkProps.title
+            })
+            .product-card__icon
+                svg 
+                    use(xlink:href=`./img/sprites/sprite.svg#${checkProps.icon}`)
+        .guarantee-card__term!= checkProps.term
+        .guarantee-card__desc
+            svg 
+                use(xlink:href=`./img/sprites/sprite.svg#snowflake`)
+            p.guarantee-card__text!= checkProps.text

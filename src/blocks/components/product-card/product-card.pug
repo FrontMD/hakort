@@ -1,0 +1,29 @@
+-
+    const defaultProductCardProps = {
+        classes: '',
+        title: 'Тормозные диски',
+        linkImg: 'product_i_1',
+        img: './img/home/product_1.png'
+    }
+
+mixin product-card(props = defaultProductCardProps)
+    -
+        const checkProps = {
+            classes: props.classes ? props.classes : defaultProductCardProps.classes,
+            title: props.title ? props.title : defaultProductCardProps.title,
+            linkImg: props.linkImg ? props.linkImg : defaultProductCardProps.linkImg,
+            img: props.img ? props.img : defaultProductCardProps.img,
+        }
+
+    .product-card(class=checkProps.classes)&attributes(attributes)
+        .product-card__info
+            +title({
+                tag: "h3",
+                text: checkProps.title
+            })
+            a.product-card__link(href="javascript:void(0);")
+                svg 
+                    use(xlink:href=`./img/sprites/sprite.svg#${checkProps.linkImg}`)
+                != "Открыть каталог"
+        .product-card__img
+            img(src=checkProps.img, alt=checkProps.title)

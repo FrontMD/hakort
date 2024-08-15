@@ -1,0 +1,57 @@
+.home-catalog {
+    height: 813px;
+    background-color: $c-light-bg;
+    border-radius: 30px;
+    padding: 75px 0 125px;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px 25px;
+        padding-top: 35px;
+    }
+
+    &__orders {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        margin-top: 76px;
+    }
+
+    &__order {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        svg {
+            flex: 0 0 32.58px;
+            width: 32.58px;
+            height: 33.57px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.467em;
+            max-width: 260px;
+        }
+
+        span {
+            color: $c-accent-2;
+            font-weight: 600;
+        }
+    }
+
+    &__markets {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__market {
+        img {
+            max-height: 40px;
+            width: auto;
+        }
+    }
+}

@@ -27,15 +27,17 @@
     }
 
     &__icon {
-        width: fit-content;
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
         display: flex;
         justify-content: center;
         align-items: center;
 
         svg {
-            width: 20.82px;
-            height: 20.82px;
-            color: inherit;
+            width: 16px;
+            height: 16px;
+            color: $c-white;
             transition: all $tr-time-and-type;
         }
     }
@@ -44,6 +46,10 @@
 .btn {
     &--white {
         background-color: $c-white;
+    }
+
+    &--green {
+        background-color: $c-accent-2;
     }
 
     &--transparent {
@@ -68,7 +74,30 @@
         color: $c-accent-1;
     }
 
-    &--icon {
+    &--linkArrow &__icon {
+        width: 23px;
+        height: 19px;
         color: $c-accent-2;
+    }
+
+    &--linkArrow &__icon svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.btn {
+    &--menu {
+        justify-content: center;
+        padding: 15px 20px;
+        min-width: fit-content;
+        border-radius: 0;
+        text-transform: none;
+        font-size: 15px;
+        transition: color $tr-time-and-type;
+    }
+
+    &--menu:hover {
+        color: $c-accent-1;
     }
 }

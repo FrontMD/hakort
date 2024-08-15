@@ -1,1 +1,37 @@
-header.site-header(data-js="siteHeader")
+header.site-header 
+    .h-container.site-header__container
+        .site-header__logo 
+            svg 
+                use(xlink:href=`./img/sprites/sprite.svg#logo`)
+        nav.site-header__nav.header-nav
+            +btn({
+                classes: 'header-nav__btn',
+                vMode: "menu",
+                text: 'О компании',
+                cMode: 'transparent',
+            })
+            +btn({
+                classes: 'header-nav__btn',
+                vMode: "menu",
+                text: 'Каталог продукции',
+                cMode: 'transparent',
+            })
+            +btn({
+                classes: 'header-nav__btn',
+                vMode: "menu",
+                text: 'Гарантия',
+                cMode: 'transparent',
+            })
+            +btn({
+                classes: 'header-nav__btn',
+                vMode: "menu",
+                text: 'Контакты',
+                cMode: 'transparent',
+            })
+        +btn({
+            classes: 'site-header__btn',
+            text: 'Заказать звонок',
+            cMode: 'white',
+            icon: true,
+            iconName: 'handset',
+        })

@@ -1,0 +1,43 @@
+.home-about 
+    .home-about__container
+        .home-about__slide
+            .h-container
+                .home-about__side
+                    != "Бренд Hakort создан компанией Hakort CO., LTD (Англия) с целью производства запасных частей, измерительного оборудования, систем электронного управления для транспортных средств."
+                .home-about__content
+                    != "Специализация компании: производство деталей тормозной системы для европейских, американских, корейских и&nbsp;китайских автомобилей."
+                    +btn({
+                        classes: 'home-about__btn',
+                        text: 'Каталог продукции',
+                        cMode: 'green',
+                        icon: true,
+                        iconName: 'btn_arrow_up',
+                    })
+        .home-about__slide
+            .h-container
+                .home-about__side
+                    != "Автозапчасти Hakort изготавливаются на&nbsp;заводах, расположенных в&nbsp;Китае, использующих только высококачественные материалы европейских, американских и&nbsp;азиатских производителей."
+                .home-about__content
+                    != "Все заводы оснащены собственными испытательными лабораториями, что позволяет вести своевременный контроль и&nbsp;производить испытания готовой продукции с&nbsp;целью соблюдения высоких требований компании."
+                    +btn({
+                        classes: 'home-about__btn',
+                        text: 'Каталог продукции',
+                        cMode: 'green',
+                        icon: true,
+                        iconName: 'btn_arrow_up',
+                    })
+        .home-about__slide
+            .h-container
+                .home-about__side
+                    != "Вся линейка Hakort обладает сертификатами международных стандартов и проходит обязательную сертификацию при поставке на российский рынок в ведущих аккредитованных органах."
+                .home-about__content
+                    != "Продукция Hakort производится в&nbsp;соответствии с&nbsp;требованиями OEM автозапчастей."
+                    +btn({
+                        classes: 'home-about__btn',
+                        text: 'Каталог продукции',
+                        cMode: 'green',
+                        icon: true,
+                        iconName: 'btn_arrow_up',
+                    })  
+    .home-about__decor
+        img(src="./img/home/home_about_decor.svg" alt="")

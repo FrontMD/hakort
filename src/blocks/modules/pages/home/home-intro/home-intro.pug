@@ -1,8 +1,10 @@
 section.home-intro
     .home-intro__inner
         .home-intro__lines
-            .home-intro__line1
-            .home-intro__line2
+            .home-intro__line.home-intro__line--1
+                img(src="./img/home/intro-line1.svg" alt="")
+            .home-intro__line.home-intro__line--2
+                img(src="./img/home/intro-line2.svg" alt="")
         .h-container.home-intro__container
             .home-intro__bgs
                 .home-intro__bg.home-intro__bg--1
@@ -41,15 +43,15 @@ section.home-intro
                 .home-intro__advantages
                     .home-intro__advantage
                         svg 
-                            use(xlink:href=`img/sprites/sprite.svg#advantage_marker`)
+                            use(xlink:href=`./img/sprites/sprite.svg#advantage_marker`)
                         != "20+ лет опыт в сфере запчастей"
                     .home-intro__advantage
                         svg 
-                            use(xlink:href=`img/sprites/sprite.svg#advantage_marker`)
+                            use(xlink:href=`./img/sprites/sprite.svg#advantage_marker`)
                         != "Английская система контроля качества"
                     .home-intro__advantage
                         svg 
-                            use(xlink:href=`img/sprites/sprite.svg#advantage_marker`)
+                            use(xlink:href=`./img/sprites/sprite.svg#advantage_marker`)
                         != "Экономичность"
                     +btn({
                         classes: 'home-intro__btn',

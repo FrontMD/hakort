@@ -27,7 +27,7 @@ mixin field(props = defaultFieldProps)
             - if(checkProps.resetBtn)
                 span.field__reset(data-js='fieldResetBtn')
                     svg 
-                        use(xlink:href=`img/sprites/sprite.svg#close`)
+                        use(xlink:href=`./img/sprites/sprite.svg#close`)
         - if(checkProps.isRequired)
             span.field__error.field-error
                 span.field-error__icon

@@ -1,0 +1,14 @@
+.home-guarantee
+    .h-container
+        .home-guarantee__bg
+        +title({
+            text: "Гарантия"
+        })
+        .home-guarantee__content
+            .home-guarantee__info
+                .home-guarantee__text Hakort предлагает расширенную гарантию на всю продукцию, понимая, что это является залогом уверенности клиентов в собственном автомобиле. Компания предоставляет гибкие условия возврата и обмена через собственную службу работы с рекламациями в гарантийных случаях.
+                .home-guarantee__logo
+                    svg 
+                        use(xlink:href=`./img/sprites/sprite.svg#logo`)
+            .home-guarantee__cards
+                +guarantee-card()
