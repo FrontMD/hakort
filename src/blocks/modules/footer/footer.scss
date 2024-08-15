@@ -1,1 +1,108 @@
-.site-footer {}
+.site-footer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 50px;
+
+    &__bottom {
+        display: flex;
+        height: 491px;
+        border-radius: 30px;
+        padding: 50px 0 80px;
+        background-color: $c-text;
+    }
+
+    &__content {
+        display: flex;
+
+        &--top {
+            justify-content: flex-end;
+        }
+
+        &--bottom {
+            display: flex;
+            align-items: flex-end;
+            gap: 59px;
+        }
+    }
+
+    &__contacts {
+        max-width: 700px;
+        width: 100%;
+        color: $c-white;
+    }
+
+    &__title {
+        color: $c-white;
+        margin-bottom: 37px;
+    }
+
+    &__contact {
+        display: block;
+        margin-top: 5px;
+    }
+
+    &__callback {
+        margin-top: 37px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        gap: 90px;
+    }
+}
+
+.map-block {
+    position: relative;
+
+    &__map {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        position: relative;
+
+        svg {
+            width: 733.5px;
+            height: 89px;
+        }
+    }
+}
+
+.footer-menu {
+    &__logo {
+        width: 200px;
+        height: 25px;
+
+        svg {
+            color: $c-accent-2;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 0;
+    }
+
+    &__link {
+        width: fit-content;
+        color: $c-white;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.22em;
+        padding: 11.35px 0;
+    }
+}

@@ -8,165 +8,36 @@
     border: none;
     cursor: pointer;
 
-    &__error {
-        display: none;
-    }
 
-    &--invalid {
-        .field__error {
-            display: block;
-        }
-    }
-
-    .field-error {
-        position: absolute;
-        right: 40px;
-        top: 50%;
-        width: 28px;
-        height: 28px;
-        transform: translateY(-50%);
-
-        &__icon {
-            display: block;
-            width: 100%;
-            height: 100%;
-
-            svg {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        &__text {
-            display: block;
-            position: absolute;
-            min-width: 117px;
-            top: calc(100% + 17.65px);
-            left: 50%;
-            padding: 10px 16px;
-            transform: translateX(-50%);
-            background-color: $c-light-bg;
-            border-radius: 40px;
-            font-size: 12px;
-            line-height: 1.22em;
-            color: $c-text;
-
-            &::after {
-                content: '';
-                position: absolute;
-                left: 50%;
-                top: -19px;
-                transform: translateX(-50%);
-                border: 6px solid transparent;
-                border-bottom: 13px solid $c-text;
-            }
-        }
-    }
+    &--invalid {}
 
     &__input {
+        font-family: $font;
         width: 100%;
-        padding: 40px 20px;
-        border-bottom: 1px solid $c-text;
-        border-color: $c-text;
-        font-size: 16px;
-        line-height: 1.5em;
-        background-color: transparent;
+        padding: 12.2px 20px;
+        font-size: 15px;
+        line-height: 1.22em;
+        background-color: $c-white;
         outline: none;
         color: $c-text;
-        text-align: center;
-        cursor: pointer;
-        transition: border-color $tr-time-and-type;
-
-        @include max(1024) {
-            padding: 24px 32px;
-        }
-
-        @include max(500) {
-            padding: 13px 32px;
-        }
 
         &::placeholder {
-            color: $c-text;
+            color: $c-placeholder;
             opacity: 1;
         }
 
         &:-ms-input-placeholder {
-            color: $c-text;
+            color: $c-placeholder;
         }
 
         &::-ms-input-placeholder {
-            color: $c-text;
+            color: $c-placeholder;
         }
 
         &:focus {
-            border-color: $c-text;
+            border-color: $c-accent-1;
         }
 
     }
 
-    &--textarea {
-        padding: 40px 20px;
-        border-bottom: 1px solid $c-text;
-        border-color: $c-text;
-        transition: border-color $tr-time-and-type;
-
-        @include max(1024) {
-            padding: 24px 32px;
-        }
-
-        @include max(500) {
-            padding: 13px 32px;
-        }
-    }
-
-    &__textarea {
-        width: 100%;
-        font-size: 16px;
-        line-height: 1.5em;
-        background-color: transparent;
-        outline: none;
-        color: $c-text;
-        text-align: center;
-        cursor: pointer;
-
-        &::placeholder {
-            color: $c-text;
-            opacity: 1;
-        }
-
-        &:-ms-input-placeholder {
-            color: $c-text;
-        }
-
-        &::-ms-input-placeholder {
-            color: $c-text;
-        }
-
-        &:focus {
-            border-color: $c-text;
-        }
-
-    }
-
-}
-
-.field {
-    @include hover() {
-        .field__input {
-            border-color: $c-text;
-
-            &::placeholder {
-                color: $c-text;
-                opacity: 1;
-            }
-
-            &:-ms-input-placeholder {
-                color: $c-text;
-            }
-
-            &::-ms-input-placeholder {
-                color: $c-text;
-            }
-        }
-    }
 }

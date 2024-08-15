@@ -1,0 +1,71 @@
+.home-guarantee {
+    position: relative;
+    height: 813px;
+    padding: 83px 0 53px;
+    background-color: $c-white;
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 35px;
+        gap: 55px;
+    }
+
+    &__info {
+        flex: 0 0 506px;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.75em;
+    }
+
+    &__logo {
+        margin-top: 50px;
+
+        svg {
+            height: 17px;
+            width: 140px;
+            color: $c-accent-1;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+        flex: 1 1 auto;
+    }
+
+    &__bgs {
+        position: absolute;
+        bottom: -316px;
+        left: 83px;
+    }
+
+    &__bg {
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-2.08deg);
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        &--1 {
+            left: 0;
+            width: 777.6px;
+            height: 724.167px;
+        }
+
+        &--2 {
+            left: 430px;
+            width: 519.219px;
+            height: 483.543px;
+        }
+    }
+}

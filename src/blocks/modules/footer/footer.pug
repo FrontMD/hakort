@@ -1,1 +1,68 @@
-footer.site-footer(data-js="footer")
+footer.site-footer
+    .site-footer__top
+        .h-container.site-footer__content.site-footer__content--top
+            .site-footer__contacts
+                +title({
+                    classes: 'site-footer__title',
+                    text: 'Контакты'
+                })
+                p.site-footer__contact ООО «ТоргСервис»
+                p.site-footer__contact 191187, г. Санкт-Петербург, наб. Реки Фонтанки, д. 2, помещ. 511-н
+                a.site-footer__contact(href="mailto:info@hakort.ru") info@hakort.ru
+                p.site-footer__contact Часы работы: пн-пт 09:00-18:00
+                +btn({
+                    classes: 'site-footer__callback',
+                    text: 'Заказать звонок',
+                    cMode: 'green',
+                    icon: true,
+                    iconName: 'handset',
+                })
+    .site-footer__bottom
+        .h-container.site-footer__content.site-footer__content--bottom
+            .site-footer__map.map-block
+                .map-block__map
+                    img(src="./img/home/map.jpg" alt="карта")
+                .map-block__logo
+                    svg 
+                        use(xlink:href=`./img/sprites/sprite.svg#logo`)
+            .site-footer__nav
+                .site-footer__menu.footer-menu
+                    .footer-menu__logo
+                        svg 
+                            use(xlink:href=`./img/sprites/sprite.svg#logo`)
+                    .footer-menu__links 
+                        a.footer-menu__link(href="#") О компании
+                        a.footer-menu__link(href="#") Каталог продукции
+                        a.footer-menu__link(href="#") Гарантия
+                        a.footer-menu__link(href="#") Контакты
+                +form({
+                    classes: 'site-footer__form',
+                    title: 'Хотите <span>заказать запчасти Hakort</span> или получить консультацию?',
+                    btnText: 'Отправить',
+                })
+                    +field({
+                        classes: '',
+                        type: 'text',
+                        placeholder: '',
+                        inputAttr: {
+                            required: ""
+                        },
+                    })
+                    +field({
+                        classes: '',
+                        type: 'tel',
+                        placeholder: '',
+                        inputAttr: {
+                            required: ""
+                        },
+                    })
+                    +field({
+                        classes: '',
+                        type: 'email',
+                        placeholder: '',
+                        inputAttr: {
+                            required: ""
+                        },
+                    })
+
+

@@ -1,6 +1,10 @@
 .home-guarantee
+    .home-guarantee__bgs
+        .home-guarantee__bg.home-guarantee__bg--2 
+            img(src="./img/home/guarantee_2.png" alt="")
+        .home-guarantee__bg.home-guarantee__bg--1 
+            img(src="./img/home/guarantee_1.png" alt="")
     .h-container
-        .home-guarantee__bg
         +title({
             text: "Гарантия"
         })
@@ -12,3 +16,21 @@
                         use(xlink:href=`./img/sprites/sprite.svg#logo`)
             .home-guarantee__cards
                 +guarantee-card()
+                +guarantee-card({
+                    title: 'Перфорированные диски',
+                    icon: 'product_i_2',
+                    term: '12 месяцев <br>30 000 км пробега',
+                    text: 'Гарантия распространяется на брак материала или производственный брак',
+                })
+                +guarantee-card({
+                    title: 'Тормозные колодки',
+                    icon: 'product_i_3',
+                    term: '12 месяцев <br>30 000 км пробега',
+                    text: 'Гарантия распространяется на брак материала или производственный брак',
+                })
+                +guarantee-card({
+                    title: 'Тормозные шланги',
+                    icon: 'product_i_5',
+                    term: '12 месяцев',
+                    text: 'Без ограничения пробега при соблюдении всех рекомендаций по эксплуатации в период между ТО',
+                })
