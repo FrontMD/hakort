@@ -2,17 +2,17 @@
 @@include("./libs/gsap.min.js")
 @@include("./libs/ScrollTrigger.min.js")
 @@include("./libs/ScrollToPlugin.min.js")
-@@include("./libs/swiper-bundle.min.js")
-@@include("./import/animations.js")
 
 //libs
 @@include("./libs/jquery-3.7.0.min.js")
 @@include("./libs/inputmask.min.js")
-@@include("./libs/fancybox.umd.min.js")
-@@include("./libs/hystmodal.min.js")
-@@include("./libs/js.cookie.min.js")
 
 //если желаете подключить библиотеку - раскомментируйте и добавьте @@
+// include("./libs/swiper-bundle.min.js")
+// include("./import/animations.js")
+// include("./libs/fancybox.umd.min.js")
+// include("./libs/hystmodal.min.js")
+// include("./libs/js.cookie.min.js")
 // include("./libs/flatpickr.min.js")
 // include("./libs/select2.full.min.js")
 // include("./libs/nouislider.min.js")

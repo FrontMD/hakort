@@ -43,25 +43,29 @@ footer.site-footer
                     +field({
                         classes: '',
                         type: 'text',
-                        placeholder: '',
+                        placeholder: 'Ваше имя',
                         inputAttr: {
-                            required: ""
+                            required: "",
+
                         },
                     })
                     +field({
                         classes: '',
                         type: 'tel',
-                        placeholder: '',
+                        placeholder: 'Номер телефона',
                         inputAttr: {
-                            required: ""
+                            required: "",
+                            "data-v-name": "phone",
+                            "data-type": "phoneNumber"
                         },
                     })
                     +field({
                         classes: '',
                         type: 'email',
-                        placeholder: '',
+                        placeholder: 'Email',
                         inputAttr: {
-                            required: ""
+                            required: "",
+                            "data-v-name": "email"
                         },
                     })
 

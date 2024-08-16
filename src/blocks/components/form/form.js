@@ -17,16 +17,13 @@ function validation() {
                 space: /^(\s)+$/,
             }
 
-            function error(el, errorText = "") {
-                let errorField = el.querySelector("[data-js='fieldError']")
+            function error(el) {
                 return {
                     set: () => {
                         el.classList.add("field--invalid")
-                        errorField.innerHTML = errorText
                     },
                     remove: () => {
                         el.classList.remove("field--invalid")
-                        errorField.innerHTML = errorText
                     },
                 }
             }
@@ -49,18 +46,25 @@ function validation() {
                                 if (valueField.length === 11) {
                                     error(input).remove()
                                 } else {
-                                    error(input, 'Ошибка ввода').set()
+                                    error(input).set()
                                 }
-                                break                               
+                                break  
+                            case 'email':
+                                if (valueField.match(dataReqexp.email)) {
+                                    error(input).remove()
+                                } else {
+                                    error(input).set()
+                                }
+                                break                                                             
                             default:
                                 if (valueField.length !== 0) {
                                     error(input).remove()
                                 } else {
-                                    error(input, "Ошибка ввода").set()
+                                    error(input).set()
                                 }
                         }
                     } else {
-                        error(input, 'Ошибка ввода').set()
+                        error(input).set()
                     }
                 }
             }
@@ -104,7 +108,6 @@ function validation() {
                     console.log(formData)
                     form.reset();
 
-                    thanksMessageShow();
                 } else {
                     console.log('форма заполнена неверно')
                 }
@@ -123,6 +126,8 @@ function inputMasksInit(form) {
 
     const phones = form.querySelectorAll('input[data-type="phoneNumber"]');
 
+    console.log(phones)
+
     if(phones.length > 0) {
         phones.forEach(phone => {
             Inputmask({
@@ -131,8 +136,4 @@ function inputMasksInit(form) {
             }).mask(phone); 
         })
     }
-}
-
-function thanksMessageShow() {
-    modals.open('#thankMessage')
 }

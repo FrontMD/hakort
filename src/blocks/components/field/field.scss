@@ -9,7 +9,9 @@
     cursor: pointer;
 
 
-    &--invalid {}
+    &--invalid &__input {
+        border-color: red;
+    }
 
     &__input {
         font-family: $font;
@@ -17,7 +19,11 @@
         padding: 12.2px 20px;
         font-size: 15px;
         line-height: 1.22em;
+        border-radius: 5px;
         background-color: $c-white;
+        border: 1px solid transparent;
+        border-color: transparent;
+        transition: border-color $tr-time-and-type;
         outline: none;
         color: $c-text;
 
@@ -35,7 +41,7 @@
         }
 
         &:focus {
-            border-color: $c-accent-1;
+            border-color: $c-placeholder;
         }
 
     }
