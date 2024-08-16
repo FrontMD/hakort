@@ -6,6 +6,10 @@
     padding-top: 10px;
     z-index: 99;
 
+    @include max(1600) {
+        padding-top: 0;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;

@@ -37,16 +37,35 @@
         align-items: center;
         color: $c-white;
 
+        @include max(1600) {
+            width: 28px;
+            height: 28px;
+        }
+
         svg {
             width: 16px;
             height: 16px;
             color: inherit;
             transition: all $tr-time-and-type;
+
+            @include max(1600) {
+                width: 12.8px;
+                height: 12.8px;
+            }
         }
     }
 }
 
 .btn {
+    &--btn {
+        @include max(1600) {
+            gap: 12px;
+            padding: 8px 16px 8px 16px;
+            min-width: 170px;
+            font-size: 10px;
+        }
+    }
+
     &--btn &__icon {
         position: relative;
         padding: 7.09px;
@@ -114,7 +133,7 @@
 .btn {
     &--menu {
         justify-content: center;
-        padding: 11.8px 20px;
+        padding: 11.4px 20px;
         min-width: fit-content;
         border-radius: 50px;
         text-transform: none;

@@ -1,9 +1,13 @@
 .home-about {
     position: relative;
-    height: 692px;
+    height: vh(722);
     overflow: hidden;
     width: 100%;
-    padding-top: 148px;
+    padding-top: vh(148);
+
+    @include max(1600) {
+        padding-top: vh(80);
+    }
 
     &__container {
         position: relative;
@@ -22,6 +26,12 @@
             align-items: stretch;
             gap: 70px;
             padding-left: 80px;
+
+            @include max(1600) {
+                min-height: 337px;
+                gap: 50px;
+                padding-left: 0;
+            }
         }
     }
 
@@ -33,6 +43,11 @@
         font-weight: 500;
         line-height: 1.75em;
         color: $c-text-white;
+
+        @include max(1600) {
+            font-size: 14px;
+            width: 315px;
+        }
     }
 
     &__content {
@@ -45,14 +60,18 @@
         font-weight: 500;
         line-height: 1.22em;
         color: $c-text-white;
+
+        @include max(1600) {
+            font-size: 36px;
+        }
     }
 
     &__decor {
         position: absolute;
         left: 30px;
-        bottom: -22px;
-        height: 206px;
-        width: 3538px;
+        bottom: vh(-22);
+        height: vh(206);
+        width: vh(3538);
 
         img {
             width: 100%;

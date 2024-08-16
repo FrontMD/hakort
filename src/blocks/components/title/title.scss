@@ -22,54 +22,36 @@
         font-size: 25px;
         text-align: center;
 
-        @include max(768) {
-            font-size: 48px;
+        @include max(1600) {
+            font-size: 20px;
         }
 
-        @include max(500) {
-            font-size: 40px;
-        }
+        @include max(500) {}
     }
 
     &__h2 {
         font-size: 26px;
         font-weight: 600;
 
-        @include max(1300) {
-            font-size: 210px;
-        }
+        @include max(1300) {}
 
-        @include max(1199) {
-            font-size: 175px;
-        }
+        @include max(1199) {}
 
-        @include max(1024) {
-            font-size: 132px;
-        }
+        @include max(1024) {}
 
-        @include max(730) {
-            font-size: 64px;
-        }
+        @include max(730) {}
     }
 
     &__h3 {
         font-size: 16px;
         font-weight: 600;
 
-        @include max(1300) {
-            font-size: 210px;
-        }
+        @include max(1300) {}
 
-        @include max(1199) {
-            font-size: 175px;
-        }
+        @include max(1199) {}
 
-        @include max(1024) {
-            font-size: 132px;
-        }
+        @include max(1024) {}
 
-        @include max(730) {
-            font-size: 64px;
-        }
+        @include max(730) {}
     }
 }

@@ -1,21 +1,38 @@
 .home-catalog {
-    height: 813px;
+    height: vh(985);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: $c-light-bg;
     border-radius: 30px;
-    padding: 75px 0 125px;
+    padding: 0 0 vh(42);
+
+    @include max(1600) {
+        height: vh(940);
+        padding: 0 0 vh(36);
+    }
 
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 35px 25px;
-        padding-top: 35px;
+        gap: vh(35) 25px;
+        padding-top: vh(70);
+
+        @include max(1600) {
+            padding-top: vh(50);
+            gap: vh(30) 20px;
+        }
     }
 
     &__orders {
         display: flex;
         align-items: center;
         gap: 100px;
-        margin-top: 76px;
+        margin-top: vh(63);
+
+        @include max(1600) {
+            margin-top: vh(50);
+        }
     }
 
     &__order {

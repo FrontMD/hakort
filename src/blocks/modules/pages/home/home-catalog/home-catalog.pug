@@ -1,44 +1,45 @@
 .home-catalog
-    .h-container
-        +title({
-            text: "Наша продукция"
-        })
-        .home-catalog__cards
-            +product-card()
-            +product-card({
-                title: 'Перфорированные диски',
-                linkImg: 'product_i_2',
-                img: './img/home/product_2.png'
+    .home-catalog__inner
+        .h-container
+            +title({
+                text: "Наша продукция"
             })
-            +product-card({
-                title: 'Тормозные колодки',
-                linkImg: 'product_i_3',
-                img: './img/home/product_3.png'
-            })
-            +product-card({
-                title: 'Суппорты',
-                linkImg: 'product_i_4',
-                img: './img/home/product_4.png'
-            })
-            +product-card({
-                title: 'Тормозные шланги',
-                linkImg: 'product_i_5',
-                img: './img/home/product_5.png'
-            })
-            +product-card({
-                title: 'Ремкомплекты суппортов',
-                linkImg: 'product_i_6',
-                img: './img/home/product_6.png'
-            })
-        .home-catalog__orders
-            .home-catalog__order
-                svg 
-                    use(xlink:href=`./img/sprites/sprite.svg#snowflake`)
-                p!= "Продукция бренда <span>Hakort</span> доступна на всех маркетплейсах"
-            .home-catalog__markets
-                .home-catalog__market
-                    img(src="./img/home/ozon.svg" alt="ozon")
-                .home-catalog__market
-                    img(src="./img/home/wildberries.svg" alt="wildberries")
-                .home-catalog__market
-                    img(src="./img/home/yandex.svg" alt="Яндекс маркет")
+            .home-catalog__cards
+                +product-card()
+                +product-card({
+                    title: 'Перфорированные диски',
+                    linkImg: 'product_i_2',
+                    img: './img/home/product_2.png'
+                })
+                +product-card({
+                    title: 'Тормозные колодки',
+                    linkImg: 'product_i_3',
+                    img: './img/home/product_3.png'
+                })
+                +product-card({
+                    title: 'Суппорты',
+                    linkImg: 'product_i_4',
+                    img: './img/home/product_4.png'
+                })
+                +product-card({
+                    title: 'Тормозные шланги',
+                    linkImg: 'product_i_5',
+                    img: './img/home/product_5.png'
+                })
+                +product-card({
+                    title: 'Ремкомплекты суппортов',
+                    linkImg: 'product_i_6',
+                    img: './img/home/product_6.png'
+                })
+            .home-catalog__orders
+                .home-catalog__order
+                    svg 
+                        use(xlink:href=`./img/sprites/sprite.svg#snowflake`)
+                    p!= "Продукция бренда <span>Hakort</span> доступна на всех маркетплейсах"
+                .home-catalog__markets
+                    .home-catalog__market
+                        img(src="./img/home/ozon.svg" alt="ozon")
+                    .home-catalog__market
+                        img(src="./img/home/wildberries.svg" alt="wildberries")
+                    .home-catalog__market
+                        img(src="./img/home/yandex.svg" alt="Яндекс маркет")

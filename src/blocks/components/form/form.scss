@@ -22,7 +22,7 @@
     &__title {
         font-family: $font;
         font-size: 20px;
-        line-height: 1.5em;
+        line-height: 1.48em;
         font-weight: 600;
         color: $c-white;
 
@@ -42,8 +42,8 @@
     &__fields {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin-top: 15px;
+        gap: 10px;
+        margin-top: 10px;
 
         @include max(1024) {}
 
@@ -51,7 +51,7 @@
     }
 
     &__submit {
-        margin: 15px 0 0;
+        margin: 12px 0 0;
 
         @include max(1024) {
             margin: 15px 0 0;
@@ -60,7 +60,7 @@
 
     &__privacy {
         display: block;
-        margin: 15px auto 0;
+        margin: 12px auto 0;
         font-size: 14px;
         font-weight: 500;
         line-height: 1.5em;
