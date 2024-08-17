@@ -19,10 +19,6 @@
     color: $c-text;
     overflow: hidden;
 
-    @include max(500) {
-        padding: 12px 24px;
-    }
-
     &__text {
         color: inherit;
         transition: all $tr-time-and-type;
@@ -42,6 +38,11 @@
             height: 28px;
         }
 
+        @include max(1023) {
+            width: 35px;
+            height: 35px;
+        }
+
         svg {
             width: 16px;
             height: 16px;
@@ -51,6 +52,11 @@
             @include max(1600) {
                 width: 12.8px;
                 height: 12.8px;
+            }
+
+            @include max(1023) {
+                width: 16px;
+                height: 16px;
             }
         }
     }
@@ -64,6 +70,13 @@
             min-width: 170px;
             font-size: 10px;
         }
+
+        @include max(1023) {
+            gap: 15px;
+            padding: 10px 20px 10px 10px;
+            min-width: 205px;
+            font-size: 12px;
+        }
     }
 
     &--btn &__icon {
@@ -73,6 +86,11 @@
         color: $c-white;
         border-radius: 100%;
         transition: color $tr-time-and-type, background-color $tr-time-and-type;
+
+        @include max(1023) {
+            background-color: $c-white;
+            color: $c-accent-2;
+        }
     }
 
     &--btn &__text {
@@ -149,6 +167,10 @@
 .btn {
     &--white {
         background-color: $c-white;
+
+        @include max(1023) {
+            background-color: $c-accent-2;
+        }
     }
 
     &--green {

@@ -26,32 +26,37 @@
             font-size: 20px;
         }
 
-        @include max(500) {}
+        @include max(1279) {
+            font-size: 18px;
+        }
+
+        @include max(1023) {
+            font-size: 50px;
+            font-weight: 600;
+            text-align: left;
+            z-index: 5;
+
+            span {
+                color: $c-accent-1;
+            }
+        }
     }
 
     &__h2 {
         font-size: 26px;
         font-weight: 600;
-
-        @include max(1300) {}
-
-        @include max(1199) {}
-
-        @include max(1024) {}
-
-        @include max(730) {}
     }
 
     &__h3 {
         font-size: 16px;
         font-weight: 600;
 
-        @include max(1300) {}
+        @include max(1279) {
+            font-size: 14px;
+        }
 
-        @include max(1199) {}
-
-        @include max(1024) {}
-
-        @include max(730) {}
+        @include max(1023) {
+            font-size: 16px;
+        }
     }
 }

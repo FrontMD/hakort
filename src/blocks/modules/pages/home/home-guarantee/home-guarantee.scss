@@ -12,6 +12,18 @@
     @include max(1600) {
         height: vh(940);
         padding: 0 0 vh(25);
+        border-radius: 20px;
+    }
+
+    @include max(1279) {
+        border-radius: 15px;
+    }
+
+    @include max(1023) {
+        padding-top: 86px;
+        padding-bottom: 40px;
+        border-radius: 0;
+        height: auto;
     }
 
     &__content {
@@ -24,6 +36,11 @@
             padding-top: 30px;
             gap: 30px;
         }
+
+        @include max(1023) {
+            flex-direction: column;
+            padding-top: 20px;
+        }
     }
 
     &__info {
@@ -31,6 +48,10 @@
 
         @include max(1600) {
             flex: 0 0 430px;
+        }
+
+        @include max(1023) {
+            flex-basis: auto;
         }
     }
 
@@ -49,6 +70,10 @@
 
         @include max(1600) {
             margin-top: 35px;
+        }
+
+        @include max(1023) {
+            display: none;
         }
 
         svg {
@@ -73,6 +98,10 @@
         position: absolute;
         bottom: -316px;
         left: 83px;
+
+        @include max(1023) {
+            display: none;
+        }
     }
 
     &__bg {

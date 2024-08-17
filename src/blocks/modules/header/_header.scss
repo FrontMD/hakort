@@ -10,11 +10,19 @@
         padding-top: 0;
     }
 
+    @include max(1023) {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 7px 0;
+
+        @include max(1279) {
+            padding: 10px 0;
+        }
     }
 
     &__logo {
@@ -26,11 +34,47 @@
             width: 100%;
             height: 100%;
         }
+
+        @include max(1279) {
+            margin-right: auto;
+        }
     }
 
     &__btn {
         border-radius: 100px;
         min-width: 227px;
+
+        @include max(1279) {
+            min-width: auto;
+            padding: 0;
+            background-color: transparent;
+
+            .btn__text {
+                display: none;
+            }
+
+            .btn__icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @include max(1023) {
+            min-width: auto;
+            padding: 0;
+            background-color: transparent;
+
+            .btn__text {
+                display: none;
+            }
+
+            .btn__icon {
+                width: 35px;
+                height: 35px;
+                background-color: $c-accent-2;
+                color: $c-white;
+            }
+        }
     }
 }
 
@@ -41,4 +85,8 @@
     padding: 10px 15px;
     border-radius: 100px;
     background-color: $c-light-bg;
+
+    @include max(1279) {
+        display: none;
+    }
 }

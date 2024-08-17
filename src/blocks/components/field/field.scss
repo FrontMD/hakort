@@ -27,6 +27,16 @@
         outline: none;
         color: $c-text;
 
+        @include max(1600) {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        @include max(1600) {
+            padding: 14.85px 20px;
+            font-size: 15px;
+        }
+
         &::placeholder {
             color: $c-placeholder;
             opacity: 1;

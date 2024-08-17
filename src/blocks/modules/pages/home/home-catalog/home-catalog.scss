@@ -10,6 +10,17 @@
     @include max(1600) {
         height: vh(940);
         padding: 0 0 vh(36);
+        border-radius: 20px;
+    }
+
+    @include max(1279) {
+        border-radius: 15px;
+    }
+
+    @include max(1023) {
+        height: auto;
+        border-radius: 0;
+        padding: 65px 0 40px;
     }
 
     &__cards {
@@ -22,6 +33,12 @@
             padding-top: vh(50);
             gap: vh(30) 20px;
         }
+
+        @include max(1023) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            padding-top: 40px;
+            gap: 20px;
+        }
     }
 
     &__orders {
@@ -33,6 +50,13 @@
         @include max(1600) {
             margin-top: vh(50);
         }
+
+        @include max(1023) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 40px;
+            gap: 30px;
+        }
     }
 
     &__order {
@@ -40,10 +64,15 @@
         align-items: center;
         gap: 20px;
 
+        @include max(1023) {
+            align-items: flex-start;
+        }
+
         svg {
             flex: 0 0 32.58px;
             width: 32.58px;
             height: 33.57px;
+            color: $c-accent-1;
         }
 
         p {

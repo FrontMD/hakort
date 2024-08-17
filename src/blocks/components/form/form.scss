@@ -3,14 +3,6 @@
     padding: 0;
     background-color: transparent;
 
-    @include max(1024) {
-        padding: 40px;
-    }
-
-    @include max(500) {
-        padding: 32px 16px;
-    }
-
     &__content {
         width: 100%;
         height: auto;
@@ -30,13 +22,14 @@
             color: $c-accent-2
         }
 
-        @include max(1024) {
-            font-size: 48px;
+        @include max(1600) {
+            font-size: 16px;
         }
 
-        @include max(730) {
-            font-size: 40px;
+        @include max(1023) {
+            font-size: 20px;
         }
+
     }
 
     &__fields {
@@ -45,17 +38,20 @@
         gap: 10px;
         margin-top: 10px;
 
-        @include max(1024) {}
+        @include max(1023) {
+            margin-top: 20px;
+            gap: 15px;
+        }
 
-        @include max(500) {}
     }
 
     &__submit {
         margin: 12px 0 0;
 
-        @include max(1024) {
-            margin: 15px 0 0;
+        @include max(1023) {
+            margin-top: 15px;
         }
+
     }
 
     &__privacy {
@@ -66,16 +62,18 @@
         line-height: 1.5em;
         color: $c-white;
 
-        @include max(1024) {
-            max-width: 330px;
-            margin: 24px auto 0;
+        @include max(1600) {
+            font-size: 12px;
+        }
+
+        @include max(1023) {
+            margin-top: 15px;
+            font-size: 14px;
         }
 
         a {
             color: $c-accent-2;
             text-decoration: underline;
-
-            @include hover() {}
         }
     }
 }

@@ -2,6 +2,12 @@
     height: 100vh;
     padding-bottom: vh(50);
 
+    @include max(1023) {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 0;
+    }
+
     &__lines {
         position: absolute;
         left: 0;
@@ -17,16 +23,53 @@
             height: 100%;
             right: 110.5px;
             bottom: 0;
+
+            @include max(1023) {
+                height: 86vh;
+                bottom: auto;
+                top: 0;
+                right: auto;
+                left: 0;
+            }
         }
 
         &--2 {
             height: 100%;
             right: 0;
+
+            @include max(1023) {
+                height: 86vh;
+                top: 0;
+            }
         }
 
         img {
             width: 100%;
             height: 100%;
+        }
+
+        @include max(1023) {
+            picture {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__bgs {
+        @include max(1023) {
+            display: none;
+        }
+    }
+
+    &__bgs-mob {
+        display: none;
+
+        @include max(1023) {
+            display: block;
+            flex: 1 1 auto;
+            position: relative;
+            z-index: 1;
         }
     }
 
@@ -42,6 +85,14 @@
             height: vh(534);
             right: vh(9);
             bottom: 128px;
+
+            @include max(1023) {
+                height: 30.25vh;
+                aspect-ratio: 1 / 0.894;
+                right: -60px;
+                bottom: 38.5%;
+            }
+
         }
 
         &--2 {
@@ -49,12 +100,26 @@
             right: vh(471);
             bottom: 197px;
             transform: rotate(-2.26deg);
+
+            @include max(1023) {
+                height: 18.5vh;
+                aspect-ratio: 1 / 0.57;
+                right: 183px;
+                bottom: 50.5%;
+            }
         }
 
         &--3 {
             height: vh(474);
             right: vh(268);
             bottom: 0;
+
+            @include max(1023) {
+                height: 32vh;
+                aspect-ratio: 1 / 0.428;
+                right: 0;
+                bottom: 0;
+            }
         }
 
     }
@@ -75,6 +140,20 @@
 
         @include max(1600) {
             padding-top: vh(138);
+            border-radius: 0 0 20px 20px;
+        }
+
+        @include max(1279) {
+            padding-top: 66px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        @include max(1023) {
+            padding-top: 0;
+            padding-bottom: 40px;
+            height: auto;
+            border-radius: 0;
+            background-color: $c-white;
         }
     }
 
@@ -86,6 +165,19 @@
 
         @include max(1600) {
             max-width: 1100px;
+        }
+
+        @include max(1279) {
+            max-width: 984px;
+        }
+
+        @include max(1023) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            padding-top: 66px;
+            padding-bottom: 40px;
         }
     }
 
@@ -100,6 +192,15 @@
             width: 1100px;
         }
 
+        @include max(1279) {
+            height: 125.24px;
+            width: 984px;
+        }
+
+        @include max(1023) {
+            display: none;
+        }
+
         svg {
             height: 100%;
             width: 100%;
@@ -112,6 +213,18 @@
         align-items: flex-start;
         gap: 10px;
         margin-top: vh(50);
+
+        @include max(1279) {
+            margin-top: 24px;
+            gap: 6px;
+        }
+
+        @include max(1023) {
+            gap: 15px;
+            z-index: 5;
+            margin-top: 0;
+        }
+
     }
 
     &__advantage {
@@ -123,7 +236,7 @@
         text-transform: uppercase;
 
         @include max(1600) {
-            gap: 16px;
+            gap: 10px;
             font-size: 14px;
             max-height: 18px;
         }
@@ -141,6 +254,10 @@
         @include max(1600) {
             margin-top: vh(24);
         }
+
+        @include max(1023) {
+            margin-top: 15px;
+        }
     }
 
     &__cards {
@@ -153,6 +270,11 @@
         @include max(1600) {
             gap: 24px;
         }
+
+        @include max(1023) {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
     }
 
     &__cards &__card:first-child {
@@ -163,6 +285,11 @@
             @include max(1600) {
                 width: 64px;
                 height: 44.8px;
+            }
+
+            @include max(1023) {
+                width: 80px;
+                height: 56px;
             }
         }
     }
@@ -185,6 +312,18 @@
         min-height: 185px;
     }
 
+    @include max(1279) {
+        flex-direction: column;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    @include max(1023) {
+        padding: 20px 10px;
+        gap: 25px;
+        background-color: $c-light-bg;
+    }
+
     &__icon {
         flex-shrink: 0;
         width: 74px;
@@ -193,6 +332,16 @@
         @include max(1600) {
             width: 59.2px;
             height: 59.2px;
+        }
+
+        @include max(1279) {
+            width: 44.8px;
+            height: 44.8px;
+        }
+
+        @include max(1023) {
+            width: 74px;
+            height: 74px;
         }
 
         img {
@@ -209,6 +358,14 @@
 
         @include max(1600) {
             gap: 8px;
+        }
+
+        @include max(1279) {
+            gap: 5px;
+        }
+
+        @include max(1023) {
+            gap: 20px;
         }
     }
 
@@ -230,10 +387,23 @@
         @include max(1600) {
             line-height: 1.26em;
         }
+
+        @include max(1600) {
+            font-size: 13px;
+        }
+
+        @include max(1023) {
+            font-size: 14px;
+            line-height: 1.429em;
+        }
     }
 
     &__btn {
         margin-top: auto;
+
+        @include max(1023) {
+            margin-top: 10px;
+        }
     }
 
 }

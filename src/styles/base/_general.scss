@@ -81,10 +81,6 @@ picture {
     max-width: 100%;
 }
 
-textarea {
-    resize: none;
-}
-
 a {
     color: inherit;
 }
@@ -133,15 +129,10 @@ html {
     max-width: calc(100% - 40px * 2);
     margin: 0 auto;
 
-    @include max(1024) {
-        max-width: calc(100% - 48px * 2);
+    @include max(1279) {
+        max-width: calc(100% - 20px * 2);
 
     }
-
-    @include max(730) {
-        max-width: calc(100% - 16px * 2);
-    }
-
 }
 
 *:focus {
@@ -154,6 +145,7 @@ html {
 
 .page {
     background-color: $c-accent-1;
+    overflow-x: hidden;
 }
 
 .site-main {

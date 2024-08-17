@@ -13,6 +13,14 @@
         padding: 20px 25px;
     }
 
+    @include max(1279) {
+        padding: 10px 20px;
+    }
+
+    @include max(1023) {
+        min-height: 230px;
+    }
+
     &__header {
         display: flex;
         align-items: flex-start;
@@ -23,10 +31,21 @@
     &__icon {
         width: 70px;
         height: 70px;
+        flex-shrink: 0;
 
         @include max(1600) {
             width: 50px;
             height: 50px;
+        }
+
+        @include max(1279) {
+            width: 40px;
+            height: 40px;
+        }
+
+        @include max(1023) {
+            width: 70px;
+            height: 70px;
         }
 
         svg {
@@ -39,12 +58,21 @@
         min-height: 52px;
         font-size: 16px;
         font-weight: 500;
-        line-height: 1.375vw;
+        line-height: 1.375em;
         text-transform: uppercase;
 
         @include max(1600) {
             min-height: 45px;
             font-size: 14px;
+        }
+
+        @include max(1279) {
+            min-height: 30px;
+        }
+
+        @include max(1023) {
+            font-size: 16px;
+            min-height: 45px;
         }
     }
 
@@ -71,6 +99,15 @@
 
         @include max(1600) {
             font-size: 13px;
+        }
+
+        @include max(1279) {
+            font-size: 12px;
+        }
+
+
+        @include max(1023) {
+            font-size: 14px;
         }
     }
 }
