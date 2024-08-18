@@ -1,4 +1,4 @@
-footer.site-footer
+section.site-footer
     .site-footer__top
         .h-container.site-footer__content.site-footer__content--top
             .site-footer__contacts
@@ -21,7 +21,9 @@ footer.site-footer
         .h-container.site-footer__content.site-footer__content--bottom
             .site-footer__map.map-block
                 .map-block__map
-                    img(src="./img/home/map.jpg" alt="карта")
+                    picture 
+                        source(srcset="./img/home/map_mob.jpg" media="(max-width: 767px)")
+                        img(src="./img/home/map.jpg" alt="карта")
                 .map-block__logo
                     svg 
                         use(xlink:href=`./img/sprites/sprite.svg#logo`)

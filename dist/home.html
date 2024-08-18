@@ -10,48 +10,49 @@
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
-    <div class="page" data-js="pageAnimWrap" data-page="home">
-      <header class="site-header"> 
-        <div class="h-container site-header__container">
-          <button class="mobile-menu__burger">
-            <svg> 
-              <use xlink:href="./img/sprites/sprite.svg#burger">       </use>
-            </svg>
-          </button>
-          <div class="site-header__logo"> 
-            <svg> 
-              <use xlink:href="./img/sprites/sprite.svg#logo"></use>
-            </svg>
-          </div>
-          <nav class="site-header__nav header-nav"><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">О компании</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Каталог продукции</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Гарантия</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Контакты</span></a>
-          </nav><a class="btn btn--btn btn--white site-header__btn" href="javascript:void(0);"><span class="btn__icon">
-                  <svg>
-                    <use xlink:href="./img/sprites/sprite.svg#handset"></use>
-                  </svg></span><span class="btn__text">Заказать звонок</span></a>
+    <header class="site-header"> 
+      <div class="h-container site-header__container">
+        <button class="mobile-menu__burger" data-hystmodal="#mobileMenu">
+          <svg> 
+            <use xlink:href="./img/sprites/sprite.svg#burger">       </use>
+          </svg>
+        </button>
+        <div class="site-header__logo"> 
+          <svg> 
+            <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+          </svg>
         </div>
-      </header>
-      <main class="site-main">
-        <section class="home-intro">
-          <div class="home-intro__inner">
-            <div class="home-intro__lines">
-              <div class="home-intro__line home-intro__line--1">
-                <picture> 
-                  <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
-                </picture>
+        <nav class="site-header__nav header-nav"><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">О компании</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Каталог продукции</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Гарантия</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Контакты</span></a>
+        </nav><a class="btn btn--btn btn--white site-header__btn" href="javascript:void(0);"><span class="btn__icon">
+                <svg>
+                  <use xlink:href="./img/sprites/sprite.svg#handset"></use>
+                </svg></span><span class="btn__text">Заказать звонок</span></a>
+      </div>
+    </header>
+    <main class="site-main">
+      <div class="page anim-scroll" data-js="pageAnimWrap" data-page="home">
+        <div class="anim-wrapper anim-wrapper--intro" data-anim="intro">
+          <section class="home-intro">
+            <div class="home-intro__inner">
+              <div class="home-intro__lines">
+                <div class="home-intro__line home-intro__line--1">
+                  <picture> 
+                    <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
+                  </picture>
+                </div>
+                <div class="home-intro__line home-intro__line--2"><img src="./img/home/intro-line2.svg" alt=""></div>
               </div>
-              <div class="home-intro__line home-intro__line--2"><img src="./img/home/intro-line2.svg" alt=""></div>
-            </div>
-            <div class="h-container home-intro__container">
-              <div class="home-intro__bgs">
-                <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1.png" alt=""></div>
-                <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2.png" alt=""></div>
-                <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3.png" alt=""></div>
-              </div>
-              <div class="home-intro__center">
-                    <div class="title title__h1">
-                      <h1>Доверяй своей машине! Trust in your car! <span>С запчастями для тормозной системы</span> Hakort</h1>
-                    </div>
-                <div class="home-intro__logo"><svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="h-container home-intro__container">
+                <div class="home-intro__bgs">
+                  <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1.png" alt=""></div>
+                  <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2.png" alt=""></div>
+                  <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3.png" alt=""></div>
+                </div>
+                <div class="home-intro__center">
+                      <div class="title title__h1 home-intro__title">
+                        <h1>Доверяй своей машине! <br>Trust in your car! <br><span>С запчастями для тормозной системы</span> Hakort</h1>
+                      </div>
+                  <div class="home-intro__logo"><svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_283_2508" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1375" height="175">
 <g clip-path="url(#clip0_283_2508)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1375 0V42.9323H1284.83V172.939H1241.83V42.9048H1151.91V0H1374.97H1375Z" fill="#6B3D90"/>
@@ -72,365 +73,405 @@
 </clipPath>
 </defs>
 </svg>
-                </div>
-                <div class="home-intro__bgs-mob">
-                  <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2_mob.png" alt=""></div>
-                  <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1_mob.png" alt=""></div>
-                  <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3_mob.png" alt=""></div>
-                </div>
-                <div class="home-intro__advantages">
-                  <div class="home-intro__advantage">
-                    <svg> 
-                      <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
-                    </svg>20+ лет опыт в сфере запчастей
                   </div>
-                  <div class="home-intro__advantage">
-                    <svg> 
-                      <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
-                    </svg>Английская система контроля качества
+                  <div class="home-intro__bgs-mob">
+                    <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2_mob.png" alt=""></div>
+                    <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1_mob.png" alt=""></div>
+                    <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3_mob.png" alt=""></div>
                   </div>
-                  <div class="home-intro__advantage">
-                    <svg> 
-                      <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
-                    </svg>Экономичность
-                  </div><a class="btn btn--btn btn--white home-intro__btn" href="javascript:void(0);"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
-                          </svg></span><span class="btn__text">Каталог продукции</span></a>
-                </div>
-              </div>
-              <div class="home-intro__cards">
-                <div class="home-intro__card intro-card">
-                  <div class="intro-card__icon"><img src="./img/home/intro_card_1.svg" alt=""></div>
-                  <div class="intro-card__desc">
-                    <div class="intro-card__title"> 1000+ <span>SKU</span>
+                  <div class="home-intro__advantages">
+                    <div class="home-intro__advantage">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
+                      </svg>20+ лет опыт в сфере запчастей
                     </div>
-                    <div class="intro-card__text">Благодаря большому ассортименту на складе, клиенты могут быстро и удобно приобрести необходимые детали для своего автомобиля.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
+                    <div class="home-intro__advantage">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
+                      </svg>Английская система контроля качества
+                    </div>
+                    <div class="home-intro__advantage">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
+                      </svg>Экономичность
+                    </div><a class="btn btn--btn btn--white home-intro__btn" href="javascript:void(0);"><span class="btn__icon">
                             <svg>
-                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
+                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
                             </svg></span><span class="btn__text">Каталог продукции</span></a>
                   </div>
                 </div>
-                <div class="home-intro__card intro-card">
-                  <div class="intro-card__icon"><img src="./img/home/intro_card_2.svg" alt=""></div>
-                  <div class="intro-card__desc">
-                    <div class="intro-card__title"> Расширенная <span>гарантия</span>
+                <div class="home-intro__cards">
+                  <div class="home-intro__card intro-card">
+                    <div class="intro-card__icon"><img src="./img/home/intro_card_1.svg" alt=""></div>
+                    <div class="intro-card__desc">
+                      <div class="intro-card__title"> 1000+ <span>SKU</span>
+                      </div>
+                      <div class="intro-card__text">Благодаря большому ассортименту на складе, клиенты могут быстро и удобно приобрести необходимые детали для своего автомобиля.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
+                              <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
+                              </svg></span><span class="btn__text">Каталог продукции</span></a>
                     </div>
-                    <div class="intro-card__text">Увеличиваем стандартный гарантийный срок, для дополнительной защиты ваших деталей и уверенности в качестве запасных частей.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
-                            <svg>
-                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
-                            </svg></span><span class="btn__text">О гарантии</span></a>
+                  </div>
+                  <div class="home-intro__card intro-card">
+                    <div class="intro-card__icon"><img src="./img/home/intro_card_2.svg" alt=""></div>
+                    <div class="intro-card__desc">
+                      <div class="intro-card__title"> Расширенная <span>гарантия</span>
+                      </div>
+                      <div class="intro-card__text">Увеличиваем стандартный гарантийный срок, для дополнительной защиты ваших деталей и уверенности в качестве запасных частей.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
+                              <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
+                              </svg></span><span class="btn__text">О гарантии</span></a>
+                    </div>
+                  </div>
+                  <div class="home-intro__card intro-card">
+                    <div class="intro-card__icon"><img src="./img/home/intro_card_3.svg" alt=""></div>
+                    <div class="intro-card__desc">
+                      <div class="intro-card__title"> Стандарт <span>IATF 16949:2016</span>
+                      </div>
+                      <div class="intro-card__text">Заменяет предыдущий стандарт ISO/TS 16949 и является одним из самых строгих и узнаваемых стандартов в автомобильной отрасли.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
+                              <svg>
+                                <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
+                              </svg></span><span class="btn__text">О компании</span></a>
+                    </div>
                   </div>
                 </div>
-                <div class="home-intro__card intro-card">
-                  <div class="intro-card__icon"><img src="./img/home/intro_card_3.svg" alt=""></div>
-                  <div class="intro-card__desc">
-                    <div class="intro-card__title"> Стандарт <span>IATF 16949:2016</span>
-                    </div>
-                    <div class="intro-card__text">Заменяет предыдущий стандарт ISO/TS 16949 и является одним из самых строгих и узнаваемых стандартов в автомобильной отрасли.</div><a class="btn btn--linkArrow btn--transparent intro-card__btn" href="javascript:void(0);"><span class="btn__icon">
-                            <svg>
-                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow"></use>
-                            </svg></span><span class="btn__text">О компании</span></a>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <div class="home-about"> 
-          <div class="home-about__container">
-            <div class="home-about__slide">
-              <div class="h-container">
-                <div class="home-about__side">Бренд Hakort создан компанией Hakort CO., LTD (Англия) с целью производства запасных частей, измерительного оборудования, систем электронного управления для транспортных средств.
-                </div>
-                <div class="home-about__content">Специализация компании: производство деталей тормозной системы для европейских, американских, корейских и&nbsp;китайских автомобилей.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
-                          </svg></span><span class="btn__text">Каталог продукции</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="home-about__slide">
-              <div class="h-container">
-                <div class="home-about__side">Автозапчасти Hakort изготавливаются на&nbsp;заводах, расположенных в&nbsp;Китае, использующих только высококачественные материалы европейских, американских и&nbsp;азиатских производителей.
-                </div>
-                <div class="home-about__content">Все заводы оснащены собственными испытательными лабораториями, что позволяет вести своевременный контроль и&nbsp;производить испытания готовой продукции с&nbsp;целью соблюдения высоких требований компании.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
-                          </svg></span><span class="btn__text">Каталог продукции</span></a>
-                </div>
-              </div>
-            </div>
-            <div class="home-about__slide">
-              <div class="h-container">
-                <div class="home-about__side">Вся линейка Hakort обладает сертификатами международных стандартов и проходит обязательную сертификацию при поставке на российский рынок в ведущих аккредитованных органах.
-                </div>
-                <div class="home-about__content">Продукция Hakort производится в&nbsp;соответствии с&nbsp;требованиями OEM автозапчастей.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
-                          <svg>
-                            <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
-                          </svg></span><span class="btn__text">Каталог продукции</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="home-about__decor"><img src="./img/home/home_about_decor.svg" alt=""></div>
+          </section>
         </div>
-        <div class="home-catalog">
-          <div class="home-catalog__inner">
+        <div class="anim-wrapper anim-wrapper--about" data-anim="about">
+          <div class="home-about"> 
+            <div class="home-about__container">
+              <div class="home-about__slide">
+                <div class="h-container">
+                  <div class="home-about__side">Бренд Hakort создан компанией Hakort CO., LTD (Англия) с целью производства запасных частей, измерительного оборудования, систем электронного управления для транспортных средств.
+                  </div>
+                  <div class="home-about__content">Специализация компании: производство деталей тормозной системы для европейских, американских, корейских и&nbsp;китайских автомобилей.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
+                            <svg>
+                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
+                            </svg></span><span class="btn__text">Каталог продукции</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-about__slide">
+                <div class="h-container">
+                  <div class="home-about__side">Автозапчасти Hakort изготавливаются на&nbsp;заводах, расположенных в&nbsp;Китае, использующих только высококачественные материалы европейских, американских и&nbsp;азиатских производителей.
+                  </div>
+                  <div class="home-about__content">Все заводы оснащены собственными испытательными лабораториями, что позволяет вести своевременный контроль и&nbsp;производить испытания готовой продукции с&nbsp;целью соблюдения высоких требований компании.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
+                            <svg>
+                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
+                            </svg></span><span class="btn__text">Каталог продукции</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="home-about__slide">
+                <div class="h-container">
+                  <div class="home-about__side">Вся линейка Hakort обладает сертификатами международных стандартов и проходит обязательную сертификацию при поставке на российский рынок в ведущих аккредитованных органах.
+                  </div>
+                  <div class="home-about__content">Продукция Hakort производится в&nbsp;соответствии с&nbsp;требованиями OEM автозапчастей.<a class="btn btn--btn btn--green home-about__btn" href="javascript:void(0);"><span class="btn__icon">
+                            <svg>
+                              <use xlink:href="./img/sprites/sprite.svg#btn_arrow_up"></use>
+                            </svg></span><span class="btn__text">Каталог продукции</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-about__decor"><img src="./img/home/home_about_decor.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="anim-wrapper anim-wrapper--catalog" data-anim="catalog">
+          <div class="home-catalog">
+            <div class="home-catalog__inner">
+              <div class="h-container">
+                    <div class="title title__h2">
+                      <h2>Наша продукция</h2>
+                    </div>
+                <div class="home-catalog__cards">
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Тормозные диски</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_1"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_1.png" alt="Тормозные диски"></div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Перфорированные диски</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_2"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_2.png" alt="Перфорированные диски"></div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Тормозные колодки</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_3"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_3.png" alt="Тормозные колодки"></div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Суппорты</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_4"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_4.png" alt="Суппорты"></div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Тормозные шланги</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_5"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_5.png" alt="Тормозные шланги"></div>
+                      </div>
+                      <div class="product-card">
+                        <div class="product-card__info">
+                              <div class="title title__h3">
+                                <h3>Ремкомплекты суппортов</h3>
+                              </div><a class="product-card__link" href="javascript:void(0);">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#product_i_6"></use>
+                            </svg>Открыть каталог</a>
+                        </div>
+                        <div class="product-card__img"><img src="./img/home/product_6.png" alt="Ремкомплекты суппортов"></div>
+                      </div>
+                </div>
+                <div class="home-catalog__orders">
+                  <div class="home-catalog__order">
+                    <svg> 
+                      <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
+                    </svg>
+                    <p>Продукция бренда <span>Hakort</span> доступна на всех маркетплейсах</p>
+                  </div>
+                  <div class="home-catalog__markets">
+                    <div class="home-catalog__market"><img src="./img/home/ozon.svg" alt="ozon"></div>
+                    <div class="home-catalog__market"><img src="./img/home/wildberries.svg" alt="wildberries"></div>
+                    <div class="home-catalog__market"><img src="./img/home/yandex.svg" alt="Яндекс маркет"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="anim-wrapper anim-wrapper--guarantee" data-anim="guarantee">
+          <div class="home-guarantee">
+            <div class="home-guarantee__bgs">
+              <div class="home-guarantee__bg home-guarantee__bg--2"> <img src="./img/home/guarantee_2.png" alt=""></div>
+              <div class="home-guarantee__bg home-guarantee__bg--1"> <img src="./img/home/guarantee_1.png" alt=""></div>
+            </div>
             <div class="h-container">
                   <div class="title title__h2">
-                    <h2>Наша продукция</h2>
+                    <h2>Гарантия</h2>
                   </div>
-              <div class="home-catalog__cards">
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Тормозные диски</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_1"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_1.png" alt="Тормозные диски"></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Перфорированные диски</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_2"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_2.png" alt="Перфорированные диски"></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Тормозные колодки</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_3"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_3.png" alt="Тормозные колодки"></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Суппорты</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_4"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_4.png" alt="Суппорты"></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Тормозные шланги</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_5"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_5.png" alt="Тормозные шланги"></div>
-                    </div>
-                    <div class="product-card">
-                      <div class="product-card__info">
-                            <div class="title title__h3">
-                              <h3>Ремкомплекты суппортов</h3>
-                            </div><a class="product-card__link" href="javascript:void(0);">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_6"></use>
-                          </svg>Открыть каталог</a>
-                      </div>
-                      <div class="product-card__img"><img src="./img/home/product_6.png" alt="Ремкомплекты суппортов"></div>
-                    </div>
-              </div>
-              <div class="home-catalog__orders">
-                <div class="home-catalog__order">
-                  <svg> 
-                    <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
-                  </svg>
-                  <p>Продукция бренда <span>Hakort</span> доступна на всех маркетплейсах</p>
-                </div>
-                <div class="home-catalog__markets">
-                  <div class="home-catalog__market"><img src="./img/home/ozon.svg" alt="ozon"></div>
-                  <div class="home-catalog__market"><img src="./img/home/wildberries.svg" alt="wildberries"></div>
-                  <div class="home-catalog__market"><img src="./img/home/yandex.svg" alt="Яндекс маркет"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="home-guarantee">
-          <div class="home-guarantee__bgs">
-            <div class="home-guarantee__bg home-guarantee__bg--2"> <img src="./img/home/guarantee_2.png" alt=""></div>
-            <div class="home-guarantee__bg home-guarantee__bg--1"> <img src="./img/home/guarantee_1.png" alt=""></div>
-          </div>
-          <div class="h-container">
-                <div class="title title__h2">
-                  <h2>Гарантия</h2>
-                </div>
-            <div class="home-guarantee__content">
-              <div class="home-guarantee__info">
-                <div class="home-guarantee__text">Hakort предлагает расширенную гарантию на всю продукцию, понимая, что это является залогом уверенности клиентов в собственном автомобиле. Компания предоставляет гибкие условия возврата и обмена через собственную службу работы с рекламациями в гарантийных случаях.</div>
-                <div class="home-guarantee__logo">
-                  <svg> 
-                    <use xlink:href="./img/sprites/sprite.svg#logo"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="home-guarantee__cards">
-                    <div class="guarantee-card">
-                      <div class="guarantee-card__header">
-                            <div class="title title__h3">
-                              <h3>Тормозные диски</h3>
-                            </div>
-                        <div class="guarantee-card__icon">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_1"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
-                      <div class="guarantee-card__desc">
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
-                        </svg>
-                        <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
-                      </div>
-                    </div>
-                    <div class="guarantee-card">
-                      <div class="guarantee-card__header">
-                            <div class="title title__h3">
-                              <h3>Перфорированные диски</h3>
-                            </div>
-                        <div class="guarantee-card__icon">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_2"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
-                      <div class="guarantee-card__desc">
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
-                        </svg>
-                        <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
-                      </div>
-                    </div>
-                    <div class="guarantee-card">
-                      <div class="guarantee-card__header">
-                            <div class="title title__h3">
-                              <h3>Тормозные колодки</h3>
-                            </div>
-                        <div class="guarantee-card__icon">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_3"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
-                      <div class="guarantee-card__desc">
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
-                        </svg>
-                        <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
-                      </div>
-                    </div>
-                    <div class="guarantee-card">
-                      <div class="guarantee-card__header">
-                            <div class="title title__h3">
-                              <h3>Тормозные шланги</h3>
-                            </div>
-                        <div class="guarantee-card__icon">
-                          <svg> 
-                            <use xlink:href="./img/sprites/sprite.svg#product_i_5"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="guarantee-card__term">12 месяцев</div>
-                      <div class="guarantee-card__desc">
-                        <svg> 
-                          <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
-                        </svg>
-                        <p class="guarantee-card__text">Без ограничения пробега при соблюдении всех рекомендаций по эксплуатации в период между ТО</p>
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="site-footer">
-        <div class="site-footer__top">
-          <div class="h-container site-footer__content site-footer__content--top">
-            <div class="site-footer__contacts">
-                  <div class="title title__h2 site-footer__title">
-                    <h2>Контакты</h2>
+              <div class="home-guarantee__content">
+                <div class="home-guarantee__info">
+                  <div class="home-guarantee__text">Hakort предлагает расширенную гарантию на всю продукцию, понимая, что это является залогом уверенности клиентов в собственном автомобиле. Компания предоставляет гибкие условия возврата и обмена через собственную службу работы с рекламациями в гарантийных случаях.</div>
+                  <div class="home-guarantee__logo">
+                    <svg> 
+                      <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+                    </svg>
                   </div>
-              <p class="site-footer__contact">ООО «ТоргСервис»</p>
-              <p class="site-footer__contact">191187, г. Санкт-Петербург, наб. Реки Фонтанки, д. 2, помещ. 511-н</p><a class="site-footer__contact" href="mailto:info@hakort.ru">info@hakort.ru</a>
-              <p class="site-footer__contact">Часы работы: пн-пт 09:00-18:00</p><a class="btn btn--btn btn--green site-footer__callback" href="javascript:void(0);"><span class="btn__icon">
-                      <svg>
-                        <use xlink:href="./img/sprites/sprite.svg#handset"></use>
-                      </svg></span><span class="btn__text">Заказать звонок</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="site-footer__bottom">
-          <div class="h-container site-footer__content site-footer__content--bottom">
-            <div class="site-footer__map map-block">
-              <div class="map-block__map"><img src="./img/home/map.jpg" alt="карта"></div>
-              <div class="map-block__logo">
-                <svg> 
-                  <use xlink:href="./img/sprites/sprite.svg#logo"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="site-footer__nav">
-              <div class="site-footer__menu footer-menu">
-                <div class="footer-menu__logo">
-                  <svg> 
-                    <use xlink:href="./img/sprites/sprite.svg#logo"></use>
-                  </svg>
                 </div>
-                <div class="footer-menu__links"> <a class="footer-menu__link" href="#">О компании</a><a class="footer-menu__link" href="#">Каталог продукции</a><a class="footer-menu__link" href="#">Гарантия</a><a class="footer-menu__link" href="#">Контакты</a></div>
-              </div>
-                  <form class="form site-footer__form" action="#" data-validate novalidate>
-                    <div class="form__content" data-js="form-content">
-                          <div class="title title__h3 form__title">
-                            <h3>Хотите <span>заказать запчасти Hakort</span> или получить консультацию?</h3>
-                          </div>
-                      <div class="form__fields">
-                            <label class="field" data-js="formField">
-                              <input class="field__input" type="text" placeholder="Ваше имя" required="">
-                            </label>
-                            <label class="field" data-js="formField">
-                              <input class="field__input" type="tel" placeholder="Номер телефона" required="" data-v-name="phone" data-type="phoneNumber">
-                            </label>
-                            <label class="field" data-js="formField">
-                              <input class="field__input" type="email" placeholder="Email" required="" data-v-name="email">
-                            </label>
-                      </div>
-                      <div class="form__privacy">
-                        <p>Нажимая «Отправить» вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a> и <a href="#" target="_blank">обработкой персональных данных</a></p>
-                      </div>
-                          <button class="btn btn--btn btn--green form__submit" type="submit"><span class="btn__icon"> 
+                <div class="home-guarantee__cards" data-js="guaranteeSlider">
+                  <div class="swiper-wrapper" data-js="guaranteeSliderWrapper">
+                        <div class="guarantee-card swiper-slide">
+                          <div class="guarantee-card__header">
+                                <div class="title title__h3 guarantee-card__title">
+                                  <h3>Тормозные диски</h3>
+                                </div>
+                            <div class="guarantee-card__icon">
                               <svg> 
-                                <use xlink:href="./img/sprites/sprite.svg#mail"></use>
-                              </svg></span><span class="btn__text">Отправить</span>
-                          </button>
-                    </div>
-                  </form>
+                                <use xlink:href="./img/sprites/sprite.svg#product_i_1"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
+                          <div class="guarantee-card__desc">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
+                            </svg>
+                            <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
+                          </div>
+                        </div>
+                        <div class="guarantee-card swiper-slide">
+                          <div class="guarantee-card__header">
+                                <div class="title title__h3 guarantee-card__title">
+                                  <h3>Перфорированные диски</h3>
+                                </div>
+                            <div class="guarantee-card__icon">
+                              <svg> 
+                                <use xlink:href="./img/sprites/sprite.svg#product_i_2"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
+                          <div class="guarantee-card__desc">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
+                            </svg>
+                            <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
+                          </div>
+                        </div>
+                        <div class="guarantee-card swiper-slide">
+                          <div class="guarantee-card__header">
+                                <div class="title title__h3 guarantee-card__title">
+                                  <h3>Тормозные колодки</h3>
+                                </div>
+                            <div class="guarantee-card__icon">
+                              <svg> 
+                                <use xlink:href="./img/sprites/sprite.svg#product_i_3"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="guarantee-card__term">12 месяцев <br>30 000 км пробега</div>
+                          <div class="guarantee-card__desc">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
+                            </svg>
+                            <p class="guarantee-card__text">Гарантия распространяется на брак материала или производственный брак</p>
+                          </div>
+                        </div>
+                        <div class="guarantee-card swiper-slide">
+                          <div class="guarantee-card__header">
+                                <div class="title title__h3 guarantee-card__title">
+                                  <h3>Тормозные шланги</h3>
+                                </div>
+                            <div class="guarantee-card__icon">
+                              <svg> 
+                                <use xlink:href="./img/sprites/sprite.svg#product_i_5"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="guarantee-card__term">12 месяцев</div>
+                          <div class="guarantee-card__desc">
+                            <svg> 
+                              <use xlink:href="./img/sprites/sprite.svg#snowflake"></use>
+                            </svg>
+                            <p class="guarantee-card__text">Без ограничения пробега при соблюдении всех рекомендаций по эксплуатации в период между ТО</p>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+        <div class="anim-wrapper anim-wrapper--footer" data-anim="footer">
+          <section class="site-footer">
+            <div class="site-footer__top">
+              <div class="h-container site-footer__content site-footer__content--top">
+                <div class="site-footer__contacts">
+                      <div class="title title__h2 site-footer__title">
+                        <h2>Контакты</h2>
+                      </div>
+                  <p class="site-footer__contact">ООО «ТоргСервис»</p>
+                  <p class="site-footer__contact">191187, г. Санкт-Петербург, наб. Реки Фонтанки, д. 2, помещ. 511-н</p><a class="site-footer__contact" href="mailto:info@hakort.ru">info@hakort.ru</a>
+                  <p class="site-footer__contact">Часы работы: пн-пт 09:00-18:00</p><a class="btn btn--btn btn--green site-footer__callback" href="javascript:void(0);"><span class="btn__icon">
+                          <svg>
+                            <use xlink:href="./img/sprites/sprite.svg#handset"></use>
+                          </svg></span><span class="btn__text">Заказать звонок</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="site-footer__bottom">
+              <div class="h-container site-footer__content site-footer__content--bottom">
+                <div class="site-footer__map map-block">
+                  <div class="map-block__map">
+                    <picture> 
+                      <source srcset="./img/home/map_mob.jpg" media="(max-width: 767px)"><img src="./img/home/map.jpg" alt="карта">
+                    </picture>
+                  </div>
+                  <div class="map-block__logo">
+                    <svg> 
+                      <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="site-footer__nav">
+                  <div class="site-footer__menu footer-menu">
+                    <div class="footer-menu__logo">
+                      <svg> 
+                        <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+                      </svg>
+                    </div>
+                    <div class="footer-menu__links"> <a class="footer-menu__link" href="#">О компании</a><a class="footer-menu__link" href="#">Каталог продукции</a><a class="footer-menu__link" href="#">Гарантия</a><a class="footer-menu__link" href="#">Контакты</a></div>
+                  </div>
+                      <form class="form site-footer__form" action="#" data-validate novalidate>
+                        <div class="form__content" data-js="form-content">
+                              <div class="title title__h3 form__title">
+                                <h3>Хотите <span>заказать запчасти Hakort</span> или получить консультацию?</h3>
+                              </div>
+                          <div class="form__fields">
+                                <label class="field" data-js="formField">
+                                  <input class="field__input" type="text" placeholder="Ваше имя" required="">
+                                </label>
+                                <label class="field" data-js="formField">
+                                  <input class="field__input" type="tel" placeholder="Номер телефона" required="" data-v-name="phone" data-type="phoneNumber">
+                                </label>
+                                <label class="field" data-js="formField">
+                                  <input class="field__input" type="email" placeholder="Email" required="" data-v-name="email">
+                                </label>
+                          </div>
+                          <div class="form__privacy">
+                            <p>Нажимая «Отправить» вы соглашаетесь с <a href="#" target="_blank">Политикой конфиденциальности</a> и <a href="#" target="_blank">обработкой персональных данных</a></p>
+                          </div>
+                              <button class="btn btn--btn btn--green form__submit" type="submit"><span class="btn__icon"> 
+                                  <svg> 
+                                    <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                                  </svg></span><span class="btn__text">Отправить</span>
+                              </button>
+                        </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <noindex>
+      <div>
+        <div class="modal hystmodal mobile-menu" id="mobileMenu">
+          <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+              <div class="modal__content">
+                <div class="mobile-menu__header">
+                  <div class="mobile-menu__logo"> 
+                    <svg> 
+                      <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+                    </svg>
+                  </div>
+                  <button class="modal__close" data-hystclose>
+                    <svg> 
+                      <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="mobile-menu__menu"><a class="mobile-menu__item" href="#">О компании</a><a class="mobile-menu__item" href="#">Каталог продукции</a><a class="mobile-menu__item" href="#">Гарантия</a><a class="mobile-menu__item" href="#">Контакты</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </noindex>
     <script src="js/main.min.js"></script>
   </body>
 </html>

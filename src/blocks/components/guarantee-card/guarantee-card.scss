@@ -21,11 +21,31 @@
         min-height: 230px;
     }
 
+    @include max(767) {
+        width: 100%;
+        max-width: 325px;
+        gap: 25px;
+        padding: 20px;
+        min-height: 313px;
+        justify-content: flex-start;
+    }
+
     &__header {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         gap: 10px;
+
+        @include max(767) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__title {
+        @include max(767) {
+            font-size: 16px;
+            line-height: 1.375em;
+        }
     }
 
     &__icon {
@@ -73,6 +93,10 @@
         @include max(1023) {
             font-size: 16px;
             min-height: 45px;
+        }
+
+        @include max(767) {
+            min-height: auto;
         }
     }
 

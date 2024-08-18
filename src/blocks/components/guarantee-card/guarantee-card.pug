@@ -20,6 +20,7 @@ mixin guarantee-card(props = defaultGuaranteeCardProps)
     .guarantee-card(class=checkProps.classes)&attributes(attributes)
         .guarantee-card__header
             +title({
+                classes: "guarantee-card__title",
                 tag: "h3",
                 text: checkProps.title
             })

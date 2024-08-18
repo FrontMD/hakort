@@ -126,8 +126,6 @@ function inputMasksInit(form) {
 
     const phones = form.querySelectorAll('input[data-type="phoneNumber"]');
 
-    console.log(phones)
-
     if(phones.length > 0) {
         phones.forEach(phone => {
             Inputmask({

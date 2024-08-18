@@ -39,6 +39,11 @@
             padding-top: 40px;
             gap: 20px;
         }
+
+        @include max(767) {
+            padding-top: 30px;
+            gap: 10px;
+        }
     }
 
     &__orders {
@@ -92,6 +97,10 @@
         display: flex;
         align-items: center;
         gap: 30px;
+
+        @include max(767) {
+            gap: 15px;
+        }
     }
 
     &__market {

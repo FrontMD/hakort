@@ -4,13 +4,13 @@
     left: 0;
     width: 100%;
     padding-top: 10px;
-    z-index: 99;
+    z-index: 95;
 
     @include max(1600) {
         padding-top: 0;
     }
 
-    @include max(1023) {
+    @include max(1279) {
         background-color: rgba(255, 255, 255, 0.9);
     }
 
@@ -22,6 +22,10 @@
 
         @include max(1279) {
             padding: 10px 0;
+        }
+
+        @include max(767) {
+            max-width: calc(100% - 20px * 2);
         }
     }
 

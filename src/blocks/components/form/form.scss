@@ -30,6 +30,10 @@
             font-size: 20px;
         }
 
+        @include max(767) {
+            font-size: 20px;
+        }
+
     }
 
     &__fields {
@@ -39,7 +43,7 @@
         margin-top: 10px;
 
         @include max(1023) {
-            margin-top: 20px;
+            margin-top: 15px;
             gap: 15px;
         }
 
@@ -49,7 +53,7 @@
         margin: 12px 0 0;
 
         @include max(1023) {
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
     }
@@ -67,7 +71,7 @@
         }
 
         @include max(1023) {
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 14px;
         }
 

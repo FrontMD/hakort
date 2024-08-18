@@ -40,11 +40,19 @@
                 color: $c-accent-1;
             }
         }
+
+        @include max(767) {
+            font-size: 24px;
+        }
     }
 
     &__h2 {
         font-size: 26px;
         font-weight: 600;
+
+        @include max(767) {
+            font-size: 20px;
+        }
     }
 
     &__h3 {
@@ -57,6 +65,10 @@
 
         @include max(1023) {
             font-size: 16px;
+        }
+
+        @include max(767) {
+            font-size: 12px;
         }
     }
 }

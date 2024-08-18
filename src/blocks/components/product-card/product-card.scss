@@ -14,6 +14,11 @@
         padding: 20px 10px;
     }
 
+    @include max(767) {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
     &__info {
         display: flex;
         flex-direction: column;
@@ -21,6 +26,11 @@
         justify-content: center;
         gap: 20px;
         flex: 1 1 auto;
+
+        @include max(767) {
+            justify-content: space-between;
+            gap: 15px;
+        }
     }
 
     &__link {
@@ -34,6 +44,10 @@
 
         @include max(1279) {
             font-size: 11px;
+        }
+
+        @include max(767) {
+            font-size: 10px;
         }
 
         svg {
@@ -71,6 +85,12 @@
 
         @include max(1279) {
             flex: 0 0 80px;
+        }
+
+        @include max(767) {
+            flex-basis: auto;
+            width: 100px;
+            height: 97.22px;
         }
 
         img {

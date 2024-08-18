@@ -1,0 +1,12 @@
+.hystmodal.modal {
+    z-index: 99 !important;
+}
+
+.hystmodal__shadow.hystmodal__shadow--show {
+    background-color: #000;
+    opacity: 0.9;
+}
+
+.hystmodal__wrap {
+    height: 100%;
+}

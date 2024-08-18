@@ -5,7 +5,14 @@ block variables
     - const page = "home"
 
 block content
-    include ../../blocks/modules/pages/home/home-intro/home-intro.pug
-    include ../../blocks/modules/pages/home/home-about/home-about.pug
-    include ../../blocks/modules/pages/home/home-catalog/home-catalog.pug
-    include ../../blocks/modules/pages/home/home-guarantee/home-guarantee.pug
+    .page.anim-scroll(data-js="pageAnimWrap" data-page=page)
+        .anim-wrapper.anim-wrapper--intro(data-anim="intro")
+            include ../../blocks/modules/pages/home/home-intro/home-intro.pug
+        .anim-wrapper.anim-wrapper--about(data-anim="about")
+            include ../../blocks/modules/pages/home/home-about/home-about.pug
+        .anim-wrapper.anim-wrapper--catalog(data-anim="catalog")
+            include ../../blocks/modules/pages/home/home-catalog/home-catalog.pug
+        .anim-wrapper.anim-wrapper--guarantee(data-anim="guarantee")
+            include ../../blocks/modules/pages/home/home-guarantee/home-guarantee.pug
+        .anim-wrapper.anim-wrapper--footer(data-anim="footer")
+            include ../../blocks/modules/footer/footer
