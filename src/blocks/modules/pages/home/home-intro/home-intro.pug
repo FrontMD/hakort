@@ -1,26 +1,27 @@
 section.home-intro
     .home-intro__inner
-        .home-intro__lines
-            .home-intro__line.home-intro__line--1
+        //-.home-intro__bgc(data-anim="homeIntroBgc")
+        //-.home-intro__lines
+            .home-intro__line.home-intro__line--1(data-anim="homeIntroLine1")
                 picture 
                     source(srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)")
                     img(src="./img/home/intro-line1.svg" alt="")
-            .home-intro__line.home-intro__line--2
+            .home-intro__line.home-intro__line--2(data-anim="homeIntroLine2")
                 img(src="./img/home/intro-line2.svg" alt="")
         .h-container.home-intro__container
-            .home-intro__bgs
-                .home-intro__bg.home-intro__bg--1
+            //-.home-intro__bgs
+                .home-intro__bg.home-intro__bg--1(data-anim="homeIntroBg1")
                     img(src="./img/home/intro_bg_1.png" alt="")
-                .home-intro__bg.home-intro__bg--2
+                .home-intro__bg.home-intro__bg--2(data-anim="homeIntroBg2")
                     img(src="./img/home/intro_bg_2.png" alt="")
-                .home-intro__bg.home-intro__bg--3
+                .home-intro__bg.home-intro__bg--3(data-anim="homeIntroBg3")
                     img(src="./img/home/intro_bg_3.png" alt="")
             .home-intro__center
                 +title({
                     classes: 'home-intro__title',
                     tag: 'h1', 
                     text: 'Доверяй своей машине! <br>Trust in your car! <br><span>С запчастями для тормозной системы</span> Hakort'
-                })
+                })(data-anim="homeIntroTitle")
                 .home-intro__logo
                     <svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_283_2508" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1375" height="175">
@@ -43,6 +44,12 @@ section.home-intro
                         </clipPath>
                         </defs>
                     </svg>
+                    .home-intro__logo-wrap.home-intro__logo-wrap--1
+                        .home-intro__logo-green.home-intro__logo-green--1
+                            img(src='./img/home/home_intro_logo_green.svg' alt="logo")
+                    .home-intro__logo-wrap.home-intro__logo-wrap--2
+                        .home-intro__logo-green.home-intro__logo-green--2
+                            img(src='./img/home/home_intro_logo_green.svg' alt="logo")
                 .home-intro__bgs-mob
                     .home-intro__bg.home-intro__bg--2
                         img(src="./img/home/intro_bg_2_mob.png" alt="")
@@ -50,7 +57,7 @@ section.home-intro
                         img(src="./img/home/intro_bg_1_mob.png" alt="")
                     .home-intro__bg.home-intro__bg--3
                         img(src="./img/home/intro_bg_3_mob.png" alt="")
-                .home-intro__advantages
+                .home-intro__advantages(data-anim="homeIntroAdvantages")
                     .home-intro__advantage
                         svg 
                             use(xlink:href=`./img/sprites/sprite.svg#advantage_marker`)
@@ -71,7 +78,7 @@ section.home-intro
                         iconName: 'btn_arrow_up',
                     })
             .home-intro__cards
-                .home-intro__card.intro-card
+                .home-intro__card.intro-card(data-anim="homeIntroCard1")
                     .intro-card__icon
                         img(src="./img/home/intro_card_1.svg" alt="")
                     .intro-card__desc
@@ -87,7 +94,7 @@ section.home-intro
                             icon: true,
                             iconName: 'btn_arrow',
                         })
-                .home-intro__card.intro-card
+                .home-intro__card.intro-card(data-anim="homeIntroCard2")
                     .intro-card__icon
                         img(src="./img/home/intro_card_2.svg" alt="")
                     .intro-card__desc
@@ -103,7 +110,7 @@ section.home-intro
                             icon: true,
                             iconName: 'btn_arrow',
                         })                        
-                .home-intro__card.intro-card
+                .home-intro__card.intro-card(data-anim="homeIntroCard3")
                     .intro-card__icon
                         img(src="./img/home/intro_card_3.svg" alt="")
                     .intro-card__desc

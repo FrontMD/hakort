@@ -31,25 +31,26 @@
     </header>
     <main class="site-main">
       <div class="page anim-scroll" data-js="pageAnimWrap" data-page="home">
+        <div class="home-intro__bgc" data-anim="homeIntroBgc"></div>
+        <div class="home-intro__lines">
+          <div class="home-intro__line home-intro__line--1" data-anim="homeIntroLine1">
+            <picture> 
+              <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
+            </picture>
+          </div>
+          <div class="home-intro__line home-intro__line--2" data-anim="homeIntroLine2"><img src="./img/home/intro-line2.svg" alt=""></div>
+        </div>
+        <div class="home-intro__bgs">
+          <div class="home-intro__bg home-intro__bg--1" data-anim="homeIntroBg1"><img src="./img/home/intro_bg_1.png" alt=""></div>
+          <div class="home-intro__bg home-intro__bg--2" data-anim="homeIntroBg2"><img src="./img/home/intro_bg_2.png" alt=""></div>
+          <div class="home-intro__bg home-intro__bg--3" data-anim="homeIntroBg3"><img src="./img/home/intro_bg_3.png" alt=""></div>
+        </div>
         <div class="anim-wrapper anim-wrapper--intro" data-anim="intro">
           <section class="home-intro">
             <div class="home-intro__inner">
-              <div class="home-intro__lines">
-                <div class="home-intro__line home-intro__line--1">
-                  <picture> 
-                    <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
-                  </picture>
-                </div>
-                <div class="home-intro__line home-intro__line--2"><img src="./img/home/intro-line2.svg" alt=""></div>
-              </div>
               <div class="h-container home-intro__container">
-                <div class="home-intro__bgs">
-                  <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1.png" alt=""></div>
-                  <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2.png" alt=""></div>
-                  <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3.png" alt=""></div>
-                </div>
                 <div class="home-intro__center">
-                      <div class="title title__h1 home-intro__title">
+                      <div class="title title__h1 home-intro__title" data-anim="homeIntroTitle">
                         <h1>Доверяй своей машине! <br>Trust in your car! <br><span>С запчастями для тормозной системы</span> Hakort</h1>
                       </div>
                   <div class="home-intro__logo"><svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,13 +74,19 @@
 </clipPath>
 </defs>
 </svg>
+                    <div class="home-intro__logo-wrap home-intro__logo-wrap--1">
+                      <div class="home-intro__logo-green home-intro__logo-green--1"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                    </div>
+                    <div class="home-intro__logo-wrap home-intro__logo-wrap--2">
+                      <div class="home-intro__logo-green home-intro__logo-green--2"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                    </div>
                   </div>
                   <div class="home-intro__bgs-mob">
                     <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2_mob.png" alt=""></div>
                     <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1_mob.png" alt=""></div>
                     <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3_mob.png" alt=""></div>
                   </div>
-                  <div class="home-intro__advantages">
+                  <div class="home-intro__advantages" data-anim="homeIntroAdvantages">
                     <div class="home-intro__advantage">
                       <svg> 
                         <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
@@ -101,7 +108,7 @@
                   </div>
                 </div>
                 <div class="home-intro__cards">
-                  <div class="home-intro__card intro-card">
+                  <div class="home-intro__card intro-card" data-anim="homeIntroCard1">
                     <div class="intro-card__icon"><img src="./img/home/intro_card_1.svg" alt=""></div>
                     <div class="intro-card__desc">
                       <div class="intro-card__title"> 1000+ <span>SKU</span>
@@ -112,7 +119,7 @@
                               </svg></span><span class="btn__text">Каталог продукции</span></a>
                     </div>
                   </div>
-                  <div class="home-intro__card intro-card">
+                  <div class="home-intro__card intro-card" data-anim="homeIntroCard2">
                     <div class="intro-card__icon"><img src="./img/home/intro_card_2.svg" alt=""></div>
                     <div class="intro-card__desc">
                       <div class="intro-card__title"> Расширенная <span>гарантия</span>
@@ -123,7 +130,7 @@
                               </svg></span><span class="btn__text">О гарантии</span></a>
                     </div>
                   </div>
-                  <div class="home-intro__card intro-card">
+                  <div class="home-intro__card intro-card" data-anim="homeIntroCard3">
                     <div class="intro-card__icon"><img src="./img/home/intro_card_3.svg" alt=""></div>
                     <div class="intro-card__desc">
                       <div class="intro-card__title"> Стандарт <span>IATF 16949:2016</span>
@@ -140,8 +147,8 @@
           </section>
         </div>
         <div class="anim-wrapper anim-wrapper--about" data-anim="about">
-          <div class="home-about"> 
-            <div class="home-about__container">
+          <div class="home-about">
+            <div class="home-about__container" data-anim="homeAboutContainer">
               <div class="home-about__slide">
                 <div class="h-container">
                   <div class="home-about__side">Бренд Hakort создан компанией Hakort CO., LTD (Англия) с целью производства запасных частей, измерительного оборудования, систем электронного управления для транспортных средств.
@@ -176,7 +183,7 @@
                 </div>
               </div>
             </div>
-            <div class="home-about__decor"><img src="./img/home/home_about_decor.svg" alt=""></div>
+            <div class="home-about__decor" data-anim="homeAboutDecor"><img src="./img/home/home_about_decor.svg" alt=""></div>
           </div>
         </div>
         <div class="anim-wrapper anim-wrapper--catalog" data-anim="catalog">
@@ -277,7 +284,7 @@
               <div class="home-guarantee__bg home-guarantee__bg--2"> <img src="./img/home/guarantee_2.png" alt=""></div>
               <div class="home-guarantee__bg home-guarantee__bg--1"> <img src="./img/home/guarantee_1.png" alt=""></div>
             </div>
-            <div class="h-container">
+            <div class="h-container" data-anim="homeGuaranteeConteiner">
                   <div class="title title__h2">
                     <h2>Гарантия</h2>
                   </div>
@@ -394,10 +401,12 @@
             <div class="site-footer__bottom">
               <div class="h-container site-footer__content site-footer__content--bottom">
                 <div class="site-footer__map map-block">
-                  <div class="map-block__map">
-                    <picture> 
-                      <source srcset="./img/home/map_mob.jpg" media="(max-width: 767px)"><img src="./img/home/map.jpg" alt="карта">
-                    </picture>
+                  <div class="map-block__map-wrap" data-anim="footerMap">
+                    <div class="map-block__map">
+                      <picture>
+                        <source srcset="./img/home/map_mob.jpg" media="(max-width: 767px)"><img src="./img/home/map.jpg" alt="карта">
+                      </picture>
+                    </div>
                   </div>
                   <div class="map-block__logo">
                     <svg> 
