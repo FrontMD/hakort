@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
-    <header class="site-header"> 
+    <header class="site-header" data-anim="header" style="opacity:0;">
       <div class="h-container site-header__container">
         <button class="mobile-menu__burger" data-hystmodal="#mobileMenu">
           <svg> 
@@ -22,7 +22,7 @@
             <use xlink:href="./img/sprites/sprite.svg#logo"></use>
           </svg>
         </div>
-        <nav class="site-header__nav header-nav"><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">О компании</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Каталог продукции</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Гарантия</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="javascript:void(0);"><span class="btn__text">Контакты</span></a>
+        <nav class="site-header__nav header-nav"><a class="btn btn--menu btn--transparent header-nav__btn" href="#about"><span class="btn__text">О компании</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="#catalog"><span class="btn__text">Каталог продукции</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="#guarantee"><span class="btn__text">Гарантия</span></a><a class="btn btn--menu btn--transparent header-nav__btn" href="#contacts"><span class="btn__text">Контакты</span></a>
         </nav><a class="btn btn--btn btn--white site-header__btn" href="javascript:void(0);"><span class="btn__icon">
                 <svg>
                   <use xlink:href="./img/sprites/sprite.svg#handset"></use>
@@ -30,15 +30,23 @@
       </div>
     </header>
     <main class="site-main">
-      <div class="page anim-scroll" data-js="pageAnimWrap" data-page="home">
+      <div class="page anim-scroll" data-js="pageAnimWrap" data-page="home" style="opacity:0;">
         <div class="home-intro__bgc" data-anim="homeIntroBgc"></div>
         <div class="home-intro__lines">
-          <div class="home-intro__line home-intro__line--1" data-anim="homeIntroLine1">
-            <picture> 
-              <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
-            </picture>
+          <div class="home-intro__line-wrap home-intro__line-wrap--1">
+            <div class="home-intro__line-inner home-intro__line-inner--1" data-anim="homeIntroLine1">
+              <div class="home-intro__line home-intro__line--1">
+                <picture> 
+                  <source srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)"><img src="./img/home/intro-line1.svg" alt="">
+                </picture>
+              </div>
+            </div>
           </div>
-          <div class="home-intro__line home-intro__line--2" data-anim="homeIntroLine2"><img src="./img/home/intro-line2.svg" alt=""></div>
+          <div class="home-intro__line-wrap home-intro__line-wrap--2">
+            <div class="home-intro__line-inner home-intro__line-inner--1" data-anim="homeIntroLine2">
+              <div class="home-intro__line home-intro__line--2"><img src="./img/home/intro-line2.svg" alt=""></div>
+            </div>
+          </div>
         </div>
         <div class="home-intro__bgs">
           <div class="home-intro__bg home-intro__bg--1" data-anim="homeIntroBg1"><img src="./img/home/intro_bg_1.png" alt=""></div>
@@ -53,20 +61,20 @@
                       <div class="title title__h1 home-intro__title" data-anim="homeIntroTitle">
                         <h1>Доверяй своей машине! <br>Trust in your car! <br><span>С запчастями для тормозной системы</span> Hakort</h1>
                       </div>
-                  <div class="home-intro__logo"><svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <div class="home-intro__logo" data-anim="homeIntroLogo"><svg width="1375" height="175" viewBox="0 0 1375 175" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_283_2508" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1375" height="175">
 <g clip-path="url(#clip0_283_2508)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1375 0V42.9323H1284.83V172.939H1241.83V42.9048H1151.91V0H1374.97H1375Z" fill="#6B3D90"/>
-<path d="M1139.43 172.087C1138.2 171.372 1134.67 169.311 1128.98 166.067H1129C1123.31 162.824 1103.38 151.61 1090.22 143.777C1077.08 135.943 1067.88 129.869 1063.23 126.79C1056.96 122.695 1057.21 123.822 1063.72 123.575C1067.88 123.41 1075.55 123.052 1081.59 122.503C1087.62 121.953 1092.02 121.266 1096.59 119.809C1101.14 118.352 1106.09 116.456 1110.31 113.46C1112.91 111.619 1115.56 109.777 1117.7 107.798C1127.77 98.398 1133.99 88.1184 1136.72 71.4347C1138.06 63.3265 1137.38 55.2733 1136.42 48.9516C1135.46 42.63 1134.01 39.1118 1131.82 33.9995C1125.12 18.3053 1109.76 7.09125 1102.1 4.09534C1095.09 1.34679 1088.99 0.329826 1082.69 0H879.449L879.531 0.054971C882.405 1.5117 891.165 6.73394 895.927 10.1971C900.69 13.6603 903.948 16.6562 907.506 20.6416C911.064 24.627 915.061 30.2065 916.922 32.8726C917.168 33.2299 919.769 37.5177 920.043 37.5177C931.347 37.7376 1011.49 38.0399 1045.44 38.0124C1079.38 37.9849 1080.58 37.875 1082.47 38.0124C1084.36 38.1498 1088.71 40.2387 1090.71 41.5855C1092.71 42.9323 1094.73 44.7463 1096.57 47.1376C1098.37 49.5288 1099.96 52.5247 1100.81 55.5481C1101.66 58.599 1101.77 61.7049 1101.49 64.7008C1101.19 67.6967 1100.51 70.6102 1099.22 73.1663C1097.91 75.7225 1096.02 77.9213 1094.05 79.7079C1092.08 81.4669 1090 82.7862 1088.08 83.7757C1086.17 84.7652 1084.39 85.3974 1083.51 85.6722C1082.61 85.9471 1082.61 85.8921 1082.55 85.9196L1082.55 85.9202C1082.5 85.9489 1082.23 86.0849 1062.3 86.1395C1042.21 86.1944 1002.19 86.1945 982.178 86.2219C962.169 86.2494 962.169 86.3319 961.758 86.3868C961.348 86.4418 960.526 86.5243 959.514 86.9915C958.528 87.4588 957.324 88.3383 956.284 89.3003C955.243 90.2623 954.368 91.2793 953.711 92.5986C953.026 93.9179 952.588 95.567 952.534 97.2711C952.451 98.9752 952.78 100.762 953.245 102.301C953.711 103.84 954.34 105.187 972.598 116.621C990.855 128.055 1026.71 149.631 1044.72 160.515C1052.55 165.27 1061.42 170.52 1063.97 172.087H1139.43Z" fill="#6B3D90"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M879.121 11.5989C865.845 3.87545 851.447 0 835.872 0H788.956H741.985C718.225 0 697.97 8.43804 681.19 25.2866C664.411 42.1352 656.008 62.502 656.008 86.3319C656.008 110.162 664.411 130.529 681.19 147.377C697.97 164.226 718.253 172.664 741.985 172.664H787.45H835.872C851.42 172.664 865.845 168.788 879.121 161.065C892.396 153.341 902.825 142.842 910.435 129.622C918.044 116.374 921.849 101.944 921.849 86.3319C921.849 70.7201 918.044 56.2902 910.435 43.0422C902.825 29.7943 892.369 19.3223 879.121 11.5989ZM835.872 127.533C847.341 127.533 857.086 123.492 865.106 115.439C873.126 107.386 877.15 97.6834 877.15 86.3319C877.15 74.9804 873.126 65.278 865.106 57.2248C857.086 49.1715 847.341 45.1311 835.872 45.1311H787.45H741.985C730.68 45.1311 721.017 49.1715 712.997 57.2248C704.977 65.278 700.953 74.9804 700.953 86.3319C700.953 97.6834 704.977 107.386 712.997 115.439C721.017 123.492 730.68 127.533 741.985 127.533H835.872Z" fill="#6B3D90"/>
-<path d="M690.443 172.087L551.719 85.8921H551.746L690.388 0H614.32L499.93 71.3248L495.496 74.3207L493.334 75.9973L491.965 77.0143L490.268 78.6084L488.68 80.6424L487.969 81.8517L487.257 84.2705L487.147 85.5073L487.257 88.2009L487.531 89.7676L488.489 92.0214L489.529 93.5606L490.843 95.0173L492.731 96.3641L614.703 172.087H690.443Z" fill="#6B3D90"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M403.196 0H323.597C303.643 0 286.644 7.06377 272.548 21.2188C258.451 35.3738 251.416 52.4423 251.416 72.4792V174.258H294.418V130.803H432.375V174.258H475.377V72.4792C475.377 52.4423 468.343 35.3738 454.246 21.2188C440.176 7.06377 423.151 0 403.196 0ZM294.418 87.6237H432.375V72.4792C432.375 64.371 429.528 57.4721 423.835 51.7551C418.142 46.0382 411.271 43.1797 403.196 43.1797H323.597C315.522 43.1797 308.652 46.0382 302.958 51.7551C297.265 57.4721 294.418 64.371 294.418 72.4792V87.6237Z" fill="#6B3D90"/>
-<path d="M224.7 0H181.698V87.6787H43.0021V0H0V174.505H43.0021V130.886H181.698V174.505H224.7V0Z" fill="#6B3D90"/>
+<path data-anim="homeLogoPath1" fill-rule="evenodd" clip-rule="evenodd" d="M1375 0V42.9323H1284.83V172.939H1241.83V42.9048H1151.91V0H1374.97H1375Z" fill="currentColor"/>
+<path data-anim="homeLogoPath2" d="M1139.43 172.087C1138.2 171.372 1134.67 169.311 1128.98 166.067H1129C1123.31 162.824 1103.38 151.61 1090.22 143.777C1077.08 135.943 1067.88 129.869 1063.23 126.79C1056.96 122.695 1057.21 123.822 1063.72 123.575C1067.88 123.41 1075.55 123.052 1081.59 122.503C1087.62 121.953 1092.02 121.266 1096.59 119.809C1101.14 118.352 1106.09 116.456 1110.31 113.46C1112.91 111.619 1115.56 109.777 1117.7 107.798C1127.77 98.398 1133.99 88.1184 1136.72 71.4347C1138.06 63.3265 1137.38 55.2733 1136.42 48.9516C1135.46 42.63 1134.01 39.1118 1131.82 33.9995C1125.12 18.3053 1109.76 7.09125 1102.1 4.09534C1095.09 1.34679 1088.99 0.329826 1082.69 0H879.449L879.531 0.054971C882.405 1.5117 891.165 6.73394 895.927 10.1971C900.69 13.6603 903.948 16.6562 907.506 20.6416C911.064 24.627 915.061 30.2065 916.922 32.8726C917.168 33.2299 919.769 37.5177 920.043 37.5177C931.347 37.7376 1011.49 38.0399 1045.44 38.0124C1079.38 37.9849 1080.58 37.875 1082.47 38.0124C1084.36 38.1498 1088.71 40.2387 1090.71 41.5855C1092.71 42.9323 1094.73 44.7463 1096.57 47.1376C1098.37 49.5288 1099.96 52.5247 1100.81 55.5481C1101.66 58.599 1101.77 61.7049 1101.49 64.7008C1101.19 67.6967 1100.51 70.6102 1099.22 73.1663C1097.91 75.7225 1096.02 77.9213 1094.05 79.7079C1092.08 81.4669 1090 82.7862 1088.08 83.7757C1086.17 84.7652 1084.39 85.3974 1083.51 85.6722C1082.61 85.9471 1082.61 85.8921 1082.55 85.9196L1082.55 85.9202C1082.5 85.9489 1082.23 86.0849 1062.3 86.1395C1042.21 86.1944 1002.19 86.1945 982.178 86.2219C962.169 86.2494 962.169 86.3319 961.758 86.3868C961.348 86.4418 960.526 86.5243 959.514 86.9915C958.528 87.4588 957.324 88.3383 956.284 89.3003C955.243 90.2623 954.368 91.2793 953.711 92.5986C953.026 93.9179 952.588 95.567 952.534 97.2711C952.451 98.9752 952.78 100.762 953.245 102.301C953.711 103.84 954.34 105.187 972.598 116.621C990.855 128.055 1026.71 149.631 1044.72 160.515C1052.55 165.27 1061.42 170.52 1063.97 172.087H1139.43Z" fill="currentColor"/>
+<path data-anim="homeLogoPath3" fill-rule="evenodd" clip-rule="evenodd" d="M879.121 11.5989C865.845 3.87545 851.447 0 835.872 0H788.956H741.985C718.225 0 697.97 8.43804 681.19 25.2866C664.411 42.1352 656.008 62.502 656.008 86.3319C656.008 110.162 664.411 130.529 681.19 147.377C697.97 164.226 718.253 172.664 741.985 172.664H787.45H835.872C851.42 172.664 865.845 168.788 879.121 161.065C892.396 153.341 902.825 142.842 910.435 129.622C918.044 116.374 921.849 101.944 921.849 86.3319C921.849 70.7201 918.044 56.2902 910.435 43.0422C902.825 29.7943 892.369 19.3223 879.121 11.5989ZM835.872 127.533C847.341 127.533 857.086 123.492 865.106 115.439C873.126 107.386 877.15 97.6834 877.15 86.3319C877.15 74.9804 873.126 65.278 865.106 57.2248C857.086 49.1715 847.341 45.1311 835.872 45.1311H787.45H741.985C730.68 45.1311 721.017 49.1715 712.997 57.2248C704.977 65.278 700.953 74.9804 700.953 86.3319C700.953 97.6834 704.977 107.386 712.997 115.439C721.017 123.492 730.68 127.533 741.985 127.533H835.872Z" fill="currentColor"/>
+<path data-anim="homeLogoPath4" d="M690.443 172.087L551.719 85.8921H551.746L690.388 0H614.32L499.93 71.3248L495.496 74.3207L493.334 75.9973L491.965 77.0143L490.268 78.6084L488.68 80.6424L487.969 81.8517L487.257 84.2705L487.147 85.5073L487.257 88.2009L487.531 89.7676L488.489 92.0214L489.529 93.5606L490.843 95.0173L492.731 96.3641L614.703 172.087H690.443Z" fill="currentColor"/>
+<path data-anim="homeLogoPath5" fill-rule="evenodd" clip-rule="evenodd" d="M403.196 0H323.597C303.643 0 286.644 7.06377 272.548 21.2188C258.451 35.3738 251.416 52.4423 251.416 72.4792V174.258H294.418V130.803H432.375V174.258H475.377V72.4792C475.377 52.4423 468.343 35.3738 454.246 21.2188C440.176 7.06377 423.151 0 403.196 0ZM294.418 87.6237H432.375V72.4792C432.375 64.371 429.528 57.4721 423.835 51.7551C418.142 46.0382 411.271 43.1797 403.196 43.1797H323.597C315.522 43.1797 308.652 46.0382 302.958 51.7551C297.265 57.4721 294.418 64.371 294.418 72.4792V87.6237Z" fill="currentColor"/>
+<path data-anim="homeLogoPath6" d="M224.7 0H181.698V87.6787H43.0021V0H0V174.505H43.0021V130.886H181.698V174.505H224.7V0Z" fill="currentColor"/>
 </g>
 </mask>
 <g mask="url(#mask0_283_2508)">
-<rect x="-18" y="-304" width="1411" height="783" rx="70" fill="#6B3D90"/>
-<rect x="702" y="46" width="174" height="81" rx="40.5" fill="#A2C617"/>
+<rect x="-18" y="-304" width="1411" height="783" rx="70" fill="currentColor"/>
+<rect x="702" y="46" width="174" height="81" rx="40.5" fill="none"/>
 </g>
 <defs>
 <clipPath id="clip0_283_2508">
@@ -75,18 +83,22 @@
 </defs>
 </svg>
                     <div class="home-intro__logo-wrap home-intro__logo-wrap--1">
-                      <div class="home-intro__logo-green home-intro__logo-green--1"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                      <div class="home-intro__logo-green home-intro__logo-green--1" data-anim="homeIntroLogoGreen">
+                        <div class="home-intro__logo-inner home-intro__logo-inner--1"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                      </div>
                     </div>
                     <div class="home-intro__logo-wrap home-intro__logo-wrap--2">
-                      <div class="home-intro__logo-green home-intro__logo-green--2"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                      <div class="home-intro__logo-green home-intro__logo-green--2" data-anim="homeIntroLogoGreen">
+                        <div class="home-intro__logo-inner home-intro__logo-inner--2"><img src="./img/home/home_intro_logo_green.svg" alt="logo"></div>
+                      </div>
                     </div>
                   </div>
                   <div class="home-intro__bgs-mob">
-                    <div class="home-intro__bg home-intro__bg--2"><img src="./img/home/intro_bg_2_mob.png" alt=""></div>
-                    <div class="home-intro__bg home-intro__bg--1"><img src="./img/home/intro_bg_1_mob.png" alt=""></div>
-                    <div class="home-intro__bg home-intro__bg--3"><img src="./img/home/intro_bg_3_mob.png" alt=""></div>
+                    <div class="home-intro__bg home-intro__bg--2" data-anim="homeIntroBg1"><img src="./img/home/intro_bg_2_mob.png" alt=""></div>
+                    <div class="home-intro__bg home-intro__bg--1" data-anim="homeIntroBg2"><img src="./img/home/intro_bg_1_mob.png" alt=""></div>
+                    <div class="home-intro__bg home-intro__bg--3" data-anim="homeIntroBg3"><img src="./img/home/intro_bg_3_mob.png" alt=""></div>
                   </div>
-                  <div class="home-intro__advantages" data-anim="homeIntroAdvantages">
+                  <div class="home-intro__advantages" data-anim="homeIntroAdvantages" style="opacity:0;">
                     <div class="home-intro__advantage">
                       <svg> 
                         <use xlink:href="./img/sprites/sprite.svg#advantage_marker"></use>
@@ -146,7 +158,7 @@
             </div>
           </section>
         </div>
-        <div class="anim-wrapper anim-wrapper--about" data-anim="about">
+        <div class="anim-wrapper anim-wrapper--about" data-anim="about" id="about">
           <div class="home-about">
             <div class="home-about__container" data-anim="homeAboutContainer">
               <div class="home-about__slide">
@@ -186,7 +198,7 @@
             <div class="home-about__decor" data-anim="homeAboutDecor"><img src="./img/home/home_about_decor.svg" alt=""></div>
           </div>
         </div>
-        <div class="anim-wrapper anim-wrapper--catalog" data-anim="catalog">
+        <div class="anim-wrapper anim-wrapper--catalog" data-anim="catalog" id="catalog">
           <div class="home-catalog">
             <div class="home-catalog__inner">
               <div class="h-container">
@@ -278,7 +290,7 @@
             </div>
           </div>
         </div>
-        <div class="anim-wrapper anim-wrapper--guarantee" data-anim="guarantee">
+        <div class="anim-wrapper anim-wrapper--guarantee" data-anim="guarantee" id="guarantee">
           <div class="home-guarantee">
             <div class="home-guarantee__bgs">
               <div class="home-guarantee__bg home-guarantee__bg--2"> <img src="./img/home/guarantee_2.png" alt=""></div>
@@ -381,7 +393,7 @@
             </div>
           </div>
         </div>
-        <div class="anim-wrapper anim-wrapper--footer" data-anim="footer">
+        <div class="anim-wrapper anim-wrapper--footer" data-anim="footer" id="contacts">
           <section class="site-footer">
             <div class="site-footer__top">
               <div class="h-container site-footer__content site-footer__content--top">

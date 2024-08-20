@@ -1,4 +1,4 @@
-header.site-header 
+header.site-header(data-anim="header" style="opacity:0;")
     .h-container.site-header__container
         button(data-hystmodal="#mobileMenu").mobile-menu__burger
             svg 
@@ -9,24 +9,28 @@ header.site-header
         nav.site-header__nav.header-nav
             +btn({
                 classes: 'header-nav__btn',
+                link: '#about',
                 vMode: "menu",
                 text: 'О компании',
                 cMode: 'transparent',
             })
             +btn({
                 classes: 'header-nav__btn',
+                link: '#catalog',
                 vMode: "menu",
                 text: 'Каталог продукции',
                 cMode: 'transparent',
             })
             +btn({
                 classes: 'header-nav__btn',
+                link: '#guarantee',
                 vMode: "menu",
                 text: 'Гарантия',
                 cMode: 'transparent',
             })
             +btn({
                 classes: 'header-nav__btn',
+                link: '#contacts',
                 vMode: "menu",
                 text: 'Контакты',
                 cMode: 'transparent',

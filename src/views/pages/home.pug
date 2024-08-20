@@ -5,15 +5,19 @@ block variables
     - const page = "home"
 
 block content
-    .page.anim-scroll(data-js="pageAnimWrap" data-page=page)
+    .page.anim-scroll(data-js="pageAnimWrap" data-page=page style="opacity:0;")
         .home-intro__bgc(data-anim="homeIntroBgc")
         .home-intro__lines
-            .home-intro__line.home-intro__line--1(data-anim="homeIntroLine1")
-                picture 
-                    source(srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)")
-                    img(src="./img/home/intro-line1.svg" alt="")
-            .home-intro__line.home-intro__line--2(data-anim="homeIntroLine2")
-                img(src="./img/home/intro-line2.svg" alt="")
+            .home-intro__line-wrap.home-intro__line-wrap--1
+                .home-intro__line-inner.home-intro__line-inner--1(data-anim="homeIntroLine1")
+                    .home-intro__line.home-intro__line--1
+                        picture 
+                            source(srcset="./img/home/intro-line1-mob.svg" media="(max-width: 1023px)")
+                            img(src="./img/home/intro-line1.svg" alt="")
+            .home-intro__line-wrap.home-intro__line-wrap--2
+                .home-intro__line-inner.home-intro__line-inner--1(data-anim="homeIntroLine2")
+                    .home-intro__line.home-intro__line--2
+                        img(src="./img/home/intro-line2.svg" alt="")
         .home-intro__bgs
             .home-intro__bg.home-intro__bg--1(data-anim="homeIntroBg1")
                 img(src="./img/home/intro_bg_1.png" alt="")
@@ -23,11 +27,11 @@ block content
                 img(src="./img/home/intro_bg_3.png" alt="")
         .anim-wrapper.anim-wrapper--intro(data-anim="intro")
             include ../../blocks/modules/pages/home/home-intro/home-intro.pug
-        .anim-wrapper.anim-wrapper--about(data-anim="about")
+        .anim-wrapper.anim-wrapper--about(data-anim="about" id="about")
             include ../../blocks/modules/pages/home/home-about/home-about.pug
-        .anim-wrapper.anim-wrapper--catalog(data-anim="catalog")
+        .anim-wrapper.anim-wrapper--catalog(data-anim="catalog" id="catalog")
             include ../../blocks/modules/pages/home/home-catalog/home-catalog.pug
-        .anim-wrapper.anim-wrapper--guarantee(data-anim="guarantee")
+        .anim-wrapper.anim-wrapper--guarantee(data-anim="guarantee" id="guarantee")
             include ../../blocks/modules/pages/home/home-guarantee/home-guarantee.pug
-        .anim-wrapper.anim-wrapper--footer(data-anim="footer")
+        .anim-wrapper.anim-wrapper--footer(data-anim="footer" id="contacts")
             include ../../blocks/modules/footer/footer
