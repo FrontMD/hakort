@@ -13,6 +13,7 @@ section.site-footer
                 +btn({
                     classes: 'site-footer__callback',
                     text: 'Заказать звонок',
+                    link: '#callback',
                     cMode: 'green',
                     icon: true,
                     iconName: 'handset',
@@ -34,15 +35,15 @@ section.site-footer
                         svg 
                             use(xlink:href=`./img/sprites/sprite.svg#logo`)
                     .footer-menu__links 
-                        a.footer-menu__link(href="#") О компании
-                        a.footer-menu__link(href="#") Каталог продукции
-                        a.footer-menu__link(href="#") Гарантия
-                        a.footer-menu__link(href="#") Контакты
+                        a.footer-menu__link(href="#about") О компании
+                        a.footer-menu__link(href="#catalog") Каталог продукции
+                        a.footer-menu__link(href="#guarantee") Гарантия
+                        a.footer-menu__link(href="#contacts") Контакты
                 +form({
                     classes: 'site-footer__form',
                     title: 'Хотите <span>заказать запчасти Hakort</span> или получить консультацию?',
                     btnText: 'Отправить',
-                })
+                })(id='callback')
                     +field({
                         classes: '',
                         type: 'text',

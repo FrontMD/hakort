@@ -7,15 +7,6 @@ let mainTimeline = gsap.timeline();
 let startTimeLine = gsap.timeline();
 let addTime = 600;
 
-
-gsap.to('body', { 
-    duration: 0.1, 
-    scrollTo: { 
-        y: 0
-        } 
-    });
-
-
 const currentPage = document.querySelector('[data-js="pageAnimWrap"]')
 let currentPageName = currentPage ? currentPage.dataset.page : ""
 
@@ -28,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
         homeIntroAnimMob();
     }
     startPageAnimation();
+    scrollToAnchor()
+
+    gsap.to(window, { 
+        duration: 1, 
+        scrollTo: { 
+            y: 0
+            } 
+        });
 })
 
 function startPageAnimation() {
@@ -450,6 +449,8 @@ function homePageAnimation() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("about", 1.21)
+
     mainTimeline.fromTo('[data-anim="homeIntroBgc"]', {
         y: "0",
     }, {
@@ -561,6 +562,8 @@ function homePageAnimation() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("catalog", 3.6)
+
     mainTimeline.fromTo('[data-anim="homeIntroTitle"]', {
         y: "0",
         opacity: "1"
@@ -635,6 +638,8 @@ function homePageAnimation() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("guarantee", 4.6)
+
     mainTimeline.fromTo('[data-anim="footer"]', {
         y: "0",
     }, {
@@ -642,6 +647,9 @@ function homePageAnimation() {
         duration: 1,
         ease: "none",
     }, ">");
+
+    mainTimeline.addLabel("contacts", 5.6)
+    mainTimeline.addLabel("callback", 5.6)
 
     mainTimeline.fromTo('[data-anim="footerMap"]', {
         width: "0",
@@ -677,7 +685,7 @@ function homePageAnimation() {
 
 }
 
-/** Общая анимация главной страницы < 1279 */
+/** Общая анимация главной страницы < 1280 */
 function homePageAnimationTabs() {
    
     scrollTriggerObject = ScrollTrigger.create({
@@ -795,6 +803,8 @@ function homePageAnimationTabs() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("about", 1.21)
+
     mainTimeline.fromTo('[data-anim="homeIntroBgc"]', {
         y: "0",
     }, {
@@ -906,6 +916,8 @@ function homePageAnimationTabs() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("catalog", 3.6)
+
     mainTimeline.fromTo('[data-anim="homeIntroTitle"]', {
         y: "0",
         opacity: "1"
@@ -980,6 +992,8 @@ function homePageAnimationTabs() {
         ease: "none",
     }, "<");
 
+    mainTimeline.addLabel("guarantee", 4.6)
+
     mainTimeline.fromTo('[data-anim="footer"]', {
         y: "0",
     }, {
@@ -987,6 +1001,9 @@ function homePageAnimationTabs() {
         duration: 1,
         ease: "none",
     }, ">");
+
+    mainTimeline.addLabel("contacts", 5.6)
+    mainTimeline.addLabel("callback", 5.6)
 
     mainTimeline.fromTo('[data-anim="footerMap"]', {
         width: "0",
@@ -1021,3 +1038,27 @@ function homePageAnimationTabs() {
     }, "< +0.7");
 }
 
+//скролл по якорям
+function scrollToAnchor() {
+    gsap.utils.toArray('a[href*="#"]').forEach(function(anchor) {
+        anchor.addEventListener("click", function(e) {
+            e.preventDefault()
+            let target = e.target.closest('a')
+            if(target.classList.contains('mobile-menu__item')) {
+                target.closest('.modal.hystmodal').querySelector('[data-hystclose]').click()
+            }
+
+            if(windowWidth > 1023) {
+                const percent = mainTimeline.labels[target.getAttribute('href').slice(1)] / mainTimeline.totalDuration();
+                const scrollPos = scrollTriggerObject.start + (scrollTriggerObject.end - scrollTriggerObject.start) * percent;
+                gsap.to(window, {duration: 1, scrollTo: scrollPos});
+            } else {
+                setTimeout(() => {
+                    document.querySelector(target.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }, 600)
+            }
+        });
+    });
+}
