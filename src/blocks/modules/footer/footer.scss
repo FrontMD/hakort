@@ -192,6 +192,10 @@
     position: relative;
     aspect-ratio: 1.0489 / 1;
 
+    @include max(767) {
+        aspect-ratio: 1 / 1.5833;
+    }
+
     &__map-wrap {
         position: absolute;
         bottom: 0;
@@ -206,19 +210,24 @@
             border-radius: 0;
         }
 
+
     }
 
     &__map {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: fit-content;
+        width: auto;
         height: 100%;
 
         img,
         picture {
             height: 100%;
             aspect-ratio: 1.0489 / 1;
+
+            @include max(767) {
+                aspect-ratio: 1 / 1.5833;
+            }
         }
     }
 
