@@ -190,6 +190,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    width: auto;
     aspect-ratio: 1.0489 / 1;
 
     @include max(767) {
@@ -224,6 +225,7 @@
         picture {
             display: block;
             height: 100%;
+            width: auto;
             aspect-ratio: 1.0489 / 1;
 
             @include max(767) {
