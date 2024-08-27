@@ -220,6 +220,11 @@
         left: 0;
         width: auto;
         height: 100%;
+        aspect-ratio: 1.0489 / 1;
+
+        @include max(767) {
+            aspect-ratio: 1 / 1.5833;
+        }
 
         img,
         picture {
