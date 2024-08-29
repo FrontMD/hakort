@@ -314,5 +314,12 @@
         font-weight: 500;
         line-height: 1.22em;
         padding: 11.35px 0;
+        background-color: transparent;
+        transition: background-color $tr-time-and-type;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: $c-accent-2;
+        }
     }
 }

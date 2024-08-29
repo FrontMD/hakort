@@ -500,6 +500,8 @@
     backdrop-filter: blur(15px);
     border-radius: 10px;
     min-height: 212px;
+    cursor: pointer;
+    transition: background-color $tr-time-and-type;
 
     @include max(1600) {
         padding: 20px 16px;
@@ -517,6 +519,14 @@
         padding: 20px 10px;
         gap: 24px;
         background-color: $c-light-bg;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 1);
+
+        .intro-card__btn .btn__icon {
+            margin-left: 15px;
+        }
     }
 
     &__icon {
@@ -568,6 +578,7 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 1.22em;
+        text-transform: uppercase;
 
         span {
             color: $c-accent-1;
@@ -595,6 +606,11 @@
 
     &__btn {
         margin-top: auto;
+
+        .btn__icon {
+            margin-left: 0;
+            transition: margin-left $tr-time-and-type;
+        }
 
         @include max(1023) {
             margin-top: 10px;
