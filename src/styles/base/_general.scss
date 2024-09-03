@@ -172,6 +172,22 @@ html {
     padding-right: 2px;
 }
 
+.only-desk {
+    display: block;
+
+    @include max(1023) {
+        display: none;
+    }
+}
+
+.only-mob {
+    display: none;
+
+    @include max(1023) {
+        display: block;
+    }
+}
+
 /*Стили анимации*/
 @include min(1024) {
 

@@ -66,6 +66,12 @@
                 height: 30px;
                 flex: 0 0 30px;
             }
+
+            @include max(1023) {
+                width: 48px;
+                height: 48px;
+                flex: 0 0 48px;
+            }
         }
 
         &:hover {

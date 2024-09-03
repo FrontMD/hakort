@@ -29,7 +29,7 @@ async function initMap() {
     coordsArr.forEach(coords => {        
         const markerElement = document.createElement('img');
           markerElement.className = 'map-block__placemark';
-          markerElement.src = "../img/placemark.png";
+          markerElement.src = "./img/placemark.png";
           map.addChild(new YMapMarker({coordinates: coords}, markerElement));
     });
 

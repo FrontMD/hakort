@@ -22,8 +22,10 @@ mixin product-card(props = defaultProductCardProps)
                 text: checkProps.title
             })
             a.product-card__link(href="javascript:void(0);")
-                svg 
+                svg.only-desk
                     use(xlink:href=`./img/sprites/sprite.svg#${checkProps.linkImg}`)
-                != "Открыть каталог"
+                span.only-desk!= "Открыть каталог"
+                svg.only-mob
+                    use(xlink:href=`./img/sprites/sprite.svg#product_card_arrow`)
         .product-card__img
             img(src=checkProps.img, alt=checkProps.title)

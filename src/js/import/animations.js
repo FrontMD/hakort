@@ -564,6 +564,22 @@ function homePageAnimation() {
 
     mainTimeline.addLabel("catalog", 3.6)
 
+    mainTimeline.fromTo('[data-anim="homeCatalogMarket1"]', {
+        x: "800%",
+    }, {
+        x: "0",
+        duration: 1,
+        ease: "none",
+    }, "<");
+
+    mainTimeline.fromTo('[data-anim="homeCatalogMarket2"]', {
+        x: "800%",
+    }, {
+        x: "0",
+        duration: 1,
+        ease: "none",
+    }, "<");
+
     mainTimeline.fromTo('[data-anim="homeIntroTitle"]', {
         y: "0",
         opacity: "1"
@@ -917,6 +933,22 @@ function homePageAnimationTabs() {
     }, "<");
 
     mainTimeline.addLabel("catalog", 3.6)
+
+    mainTimeline.fromTo('[data-anim="homeCatalogMarket1"]', {
+        x: "500%",
+    }, {
+        x: "0",
+        duration: 1,
+        ease: "none",
+    }, "<");
+
+    mainTimeline.fromTo('[data-anim="homeCatalogMarket2"]', {
+        x: "500%",
+    }, {
+        x: "0",
+        duration: 1,
+        ease: "none",
+    }, "<");
 
     mainTimeline.fromTo('[data-anim="homeIntroTitle"]', {
         y: "0",
