@@ -46,7 +46,7 @@
 
             &--1 {
                 width: 160vh;
-                right: 110px;
+                right: 126px;
                 justify-content: flex-end;
 
                 @include max(1023) {
@@ -130,8 +130,8 @@
 
         &--1 {
             height: vh(534);
-            right: calc((100vw - 1656px) / 2);
-            bottom: vh(250);
+            right: calc((100vw - 1633px) / 2);
+            bottom: vh(206.8);
             z-index: 12;
 
             @include max(1279) {
@@ -153,11 +153,11 @@
         }
 
         &--2 {
-            height: vh(325);
-            bottom: vh(350);
-            transform: rotate(-2.26deg);
+            height: vh(347);
+            bottom: vh(296);
+            transform: rotate(-0.26deg);
             z-index: 11;
-            left: calc(100vw - ((100vw - 1656px) / 2) - vh(985));
+            left: calc(100vw - ((100vw - 1656px) / 2) - vh(1051));
 
             @include max(1279) {
                 left: calc(100vw - ((100vw - 984px) / 2) - vh(985));
@@ -182,7 +182,7 @@
             height: vh(474);
             bottom: 7%;
             z-index: 13;
-            left: calc(100vw - ((100vw - 1656px) / 2) - vh(1550));
+            left: calc(100vw - ((100vw - 1656px) / 2) - vh(1598.4));
 
             @include max(1279) {
                 left: calc(100vw - ((100vw - 984px) / 2) - vh(1550));
@@ -213,7 +213,7 @@
     &__inner {
         position: relative;
         height: vh(1003);
-        padding-top: vh(148);
+        padding-top: vh(140);
         background-color: transparent;
         border-radius: 0 0 30px 30px;
 
@@ -279,7 +279,7 @@
     &__logo {
         position: relative;
         text-align: center;
-        margin-top: 7px;
+        margin-top: 13px;
         height: 175px;
         width: 1375px;
         color: $c-accent-1;
@@ -388,7 +388,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
-        margin-top: vh(50);
+        margin-top: vh(82.4);
 
         @include max(1279) {
             margin-top: 24px;
@@ -439,7 +439,7 @@
     }
 
     &__btn {
-        margin-top: vh(30);
+        margin-top: vh(34.56);
 
         @include max(1600) {
             margin-top: vh(24);
@@ -473,6 +473,8 @@
     }
 
     &__cards &__card:first-child {
+        gap: 25px;
+
         .intro-card__icon {
             width: 80px;
             height: 56px;
@@ -487,6 +489,10 @@
                 height: 56px;
             }
         }
+    }
+
+    &__card {
+        flex: 1 1 32%;
     }
 
 }
@@ -575,6 +581,7 @@
     }
 
     &__title {
+        margin-top: -5px;
         font-size: 16px;
         font-weight: 600;
         line-height: 1.22em;
