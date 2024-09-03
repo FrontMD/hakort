@@ -33,7 +33,7 @@
         min-width: 100%;
 
         .h-container {
-            min-height: 415px;
+            min-height: 427px;
             display: flex;
             align-items: stretch;
             gap: 70px;
@@ -62,6 +62,7 @@
 
 
     &__side {
+        padding-top: 13px;
         width: 394px;
         flex-shrink: 0;
         font-size: 16px;

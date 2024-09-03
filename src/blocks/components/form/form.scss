@@ -14,7 +14,7 @@
     &__title {
         font-family: $font;
         font-size: 20px;
-        line-height: 1.48em;
+        line-height: 30px;
         font-weight: 600;
         color: $c-white;
 
@@ -24,10 +24,12 @@
 
         @include max(1600) {
             font-size: 16px;
+            line-height: 24px;
         }
 
         @include max(1023) {
             font-size: 20px;
+            line-height: 30px;
         }
 
         @include max(767) {
