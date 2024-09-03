@@ -22,10 +22,7 @@ section.site-footer
         .h-container.site-footer__content.site-footer__content--bottom
             .site-footer__map.map-block
                 .map-block__map-wrap(data-anim="footerMap")
-                    .map-block__map(data-js="footerMapContainer")
-                        //picture
-                            source(srcset="./img/home/map_mob.jpg" media="(max-width: 767px)")
-                            img(src="./img/home/map.jpg" alt="карта")
+                    .map-block__map(data-js="footerMapContainer" data-coords="59.946946,30.337787 69.946946,31.337787")
                 .map-block__logo
                     svg 
                         use(xlink:href=`./img/sprites/sprite.svg#logo`)
